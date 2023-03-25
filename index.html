@@ -229,7 +229,7 @@
             var time = $('#pickuptime').val();
 
             var baseUrl = 'https://wa.me/6353831031?text='
-            var query = `Pickup Location :-${pick_up} , Drop Location :- ${drop} , Car :- ${car} , Date :- ${date} , Time :- ${time}`
+            var query = `*Pickup Location* :-${pick_up} \n, *Drop Location* :- ${drop} , *Car* :- ${car} , *Date* :- ${date} , *Time* :- ${time}`
             // encode only the query string
             var completeUrl = baseUrl + encodeURIComponent(query)
             console.log(completeUrl)
