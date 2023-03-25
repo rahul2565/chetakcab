@@ -9,27 +9,37 @@
 
 <url>
   <loc>https://chetakcab.in/</loc>
-  <lastmod>2023-03-25T06:30:49+00:00</lastmod>
+  <lastmod>2023-03-25T10:07:03+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://chetakcab.in/index.html</loc>
-  <lastmod>2023-03-25T06:30:49+00:00</lastmod>
+  <lastmod>2023-03-25T10:07:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://chetakcab.in/about.html</loc>
-  <lastmod>2023-03-25T06:30:49+00:00</lastmod>
+  <lastmod>2023-03-25T10:07:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://chetakcab.in/service.html</loc>
-  <lastmod>2023-03-25T06:30:49+00:00</lastmod>
+  <lastmod>2023-03-25T10:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chetakcab.in/routes.html</loc>
+  <lastmod>2023-03-25T10:07:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://chetakcab.in/contact.html</loc>
-  <lastmod>2023-03-25T06:30:49+00:00</lastmod>
+  <lastmod>2023-03-25T10:07:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chetakcab.in/cab-booking.html</loc>
+  <lastmod>2023-03-25T10:07:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
