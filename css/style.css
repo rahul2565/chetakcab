@@ -17,7 +17,9 @@ h4,
 .font-weight-semi-bold {
     font-weight: 600 !important;
 }
-
+ul {
+    list-style-type: none;
+}
 h5,
 h6,
 .font-weight-medium {
