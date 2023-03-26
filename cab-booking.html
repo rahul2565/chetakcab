@@ -215,10 +215,29 @@
                     </select>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                   <a href="./cab-booking.html"> <button class="btn btn-primary btn-block mb-3" type="submit" style="height: 50px;">Search</button></a>
+                  <a href="" id="url"><button class="btn btn-primary btn-block mb-3" type="submit" id="submit" style="height: 50px;">Search</button></a>
                 </div>
             </div>
         </div>
+    <script>
+        $(function(){
+          var a = $('#url').text();
+          $('#submit').on("click",function(){
+            var pick_up = $('#pickup').val();
+            var drop = $('#droplocation').val();
+            var car = $('#selectedcar').val();
+            var date = $('#pickupdate').val();
+            var time = $('#pickuptime').val();
+
+            var baseUrl = 'https://wa.me/7433809921?text='
+            var query = `\n*Pickup Location* :-${pick_up} ,\n*Drop Location* :- ${drop} ,\n*Car* :- ${car} ,\n*Date* :- ${date} ,\n*Time* :- ${time}`
+            // encode only the query string
+            var completeUrl = baseUrl + encodeURIComponent(query)
+            console.log(completeUrl)
+            $('#url').attr('href', completeUrl);
+          });
+        });
+      </script>
         <!--  -->
 
 <div class="col-lg-12 col-md-12 col-xs-12">
