@@ -25,7 +25,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/31291f250c.js" crossorigin="anonymous"></script>
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -212,73 +212,6 @@
             </div>
         </div>
     </form>
-    <script>
-        $(document).ready(function () {
-            $('form#bookingform').validate({
-                errorClass: "state-error",
-                validClass: "state-success",
-                rules: {
-                    pickup: {
-                        required: true,
-                    },
-                    droplocation: {
-                        required: true,
-                    },
-                    date: {
-                        required: true,
-                    },
-                    time: {
-                        required: true,
-                    },
-                    car: {
-                        required: true,
-                    },
-                },
-                messages: {
-                    pickup: {
-                        required: '*Please enter Pick-up Location',
-                    },
-                    droplocation: {
-                        required: '*Please enter Drop Location',
-                    },
-                    date: {
-                        required: '*Please enter Date of Pick-up ',
-                    },
-                    time: {
-                        required: '*Please enter Time',
-                    },
-                    car: {
-                        required: '*Please enter Car',
-                    }
-                },
-                highlight: function (element, errorClass, validClass) {
-                    $(element).closest('.form-group').addClass(errorClass).removeClass(validClass);
-                },
-                unhighlight: function (element, errorClass, validClass) {
-                    $(element).closest('.form-group').removeClass(errorClass).addClass(validClass);
-                },
-                errorPlacement: function (error, element) {
-                    error.insertAfter(element);
-                },
-                submitHandler: function (form) {
-                    var pick_up = $('#pickup').val();
-                    var drop = $('#droplocation').val();
-                    var car = $('#selectedcar').val();
-                    var date = $('#pickupdate').val();
-                    var time = $('#pickuptime').val();
-                    var baseUrl = 'https://wa.me/7433809921?text='
-                    var query = `\n*Pickup Location* :-${pick_up} ,\n*Drop Location* :- ${drop} ,\n*Car* :- ${car} ,\n*Date* :- ${date} ,\n*Time* :- ${time}`
-                    var completeUrl = baseUrl + encodeURIComponent(query)
-                    var form = document.getElementById("bookingform");
-                    form.onsubmit = function () {
-                        window.location = completeUrl;
-                        return false;
-                    };
-                }
-            });
-
-        });
-    </script>
     <!--  -->
 
     <!--  -->
@@ -292,12 +225,36 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
                     <img class="w-75 mb-4" src="img/about.webp" alt="car cab bookin image">
-                    <p class="text-uppercase m-0">Chetak Cab Services Private Limited</p>
-                    <ul class="text-uppercase m-0">
-                        <li>Provide one way cab service</li>
-                        <li>Trip Services</li>
-                        <li>Multi City Travel Services</li>
-                    </ul>
+                    <p class="text-uppercase m-0">CHETAK CAB SERVICES IS SAFE & RELIABLE TAXI SERVICE</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
+                            style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-solid fa-route text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">Provide One Way Cab Service</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-secondary p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
+                            style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-solid fa-suitcase-rolling text-secondary"></i>
+                        </div>
+                        <h4 class="text-light text-uppercase m-0">Trip Services</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
+                            style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-solid fa-city text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">Multi City Travel Services</h4>
+                    </div>
                 </div>
             </div>
             <div class="row mt-3">
@@ -331,7 +288,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- About End -->
 
     <!-- Footer Start -->
@@ -438,6 +395,73 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('form#bookingform').validate({
+                errorClass: "state-error",
+                validClass: "state-success",
+                rules: {
+                    pickup: {
+                        required: true,
+                    },
+                    droplocation: {
+                        required: true,
+                    },
+                    date: {
+                        required: true,
+                    },
+                    time: {
+                        required: true,
+                    },
+                    car: {
+                        required: true,
+                    },
+                },
+                messages: {
+                    pickup: {
+                        required: '*Please enter Pick-up Location',
+                    },
+                    droplocation: {
+                        required: '*Please enter Drop Location',
+                    },
+                    date: {
+                        required: '*Please enter Date of Pick-up ',
+                    },
+                    time: {
+                        required: '*Please enter Time',
+                    },
+                    car: {
+                        required: '*Please enter Car',
+                    }
+                },
+                highlight: function (element, errorClass, validClass) {
+                    $(element).closest('.form-group').addClass(errorClass).removeClass(validClass);
+                },
+                unhighlight: function (element, errorClass, validClass) {
+                    $(element).closest('.form-group').removeClass(errorClass).addClass(validClass);
+                },
+                errorPlacement: function (error, element) {
+                    error.insertAfter(element);
+                },
+                submitHandler: function (form) {
+                    var pick_up = $('#pickup').val();
+                    var drop = $('#droplocation').val();
+                    var car = $('#selectedcar').val();
+                    var date = $('#pickupdate').val();
+                    var time = $('#pickuptime').val();
+                    var baseUrl = 'https://wa.me/7433809921?text='
+                    var query = `\n*Pickup Location* :-${pick_up} ,\n*Drop Location* :- ${drop} ,\n*Car* :- ${car} ,\n*Date* :- ${date} ,\n*Time* :- ${time}`
+                    var completeUrl = baseUrl + encodeURIComponent(query)
+                    var form = document.getElementById("bookingform");
+                    form.onsubmit = function () {
+                        window.location = completeUrl;
+                        return false;
+                    };
+                }
+            });
+
+        });
+    </script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
