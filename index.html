@@ -52,6 +52,10 @@
     <script src="./utils/jquery/jquery-3.6.4.min.js"></script>
     <script src="./utils/jquery/jquery.validate.min.js"></script>
     <script src="./utils/jquery/additional-methods.min.js"></script>
+
+    <script src="/js/jquery-editable-select.min.js"></script>
+    <link href="/css/jquery-editable-select.min.css" rel="stylesheet">
+    <link href="/css/jquery-clockpicker.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -118,14 +122,11 @@
     <!-- Navbar End -->
 
     <!-- Search Start -->
-
     <form id="bookingform" method="get">
         <div class="container-fluid bg-white pt-3 px-lg-5">
             <div class="row mx-n2">
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                    <select class="custom-select px-4 mb-3" id="pickup" name="pickup" style="height: 50px;"
-                        required="required">
-                        <option value="">Pickup Location</option>
+                    <select class="custom-select px-4 mb-3" id="pickup" name="pickup" style="height: 50px;">
                         <option value="Ahmedabad">Ahmedabad</option>
                         <option value="Surat">Surat</option>
                         <option value="Vadodara">Vadodara</option>
@@ -160,9 +161,8 @@
                     </select>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                    <select class="custom-select px-4 mb-3" id="droplocation" name="droplocation" style="height: 50px;"
-                        required="required">
-                        <option value="">Drop Location</option>
+                    <select class="custom-select px-4 mb-3" id="droplocation" name="droplocation"
+                        aria-placeholder="Enter " style="height: 50px;" required="required">
                         <option value="Ahmedabad">Ahmedabad</option>
                         <option value="Surat">Surat</option>
                         <option value="Vadodara">Vadodara</option>
@@ -196,22 +196,25 @@
                         <option value="Jetpur">Jetpur</option>
                     </select>
                 </div>
+
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
                     <div class="date mb-3" id="date" data-target-input="nearest">
                         <input type="text" class="form-control p-4 datetimepicker-input" name="date" id="pickupdate"
                             required placeholder="Pickup Date" data-target="#date" data-toggle="datetimepicker" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </span>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                    <div class="time mb-3" id="time" data-target-input="nearest">
-                        <input type="text" class="form-control p-4 datetimepicker-input" name="time" id="pickuptime"
-                            required placeholder="Pickup Time" data-target="#time" data-toggle="datetimepicker" />
+                <div class="col-xl-2 col-lg-4 col-md-6 px-2 ">
+                    <div class="time mb-3 clockpicker" id="time" data-target-input="nearest">
+                        <input type="text" class="form-control p-4 " name="time" id="pickuptime"
+                            required placeholder="Pickup Time" data-target="#time"  />
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
                     <select class="custom-select px-4 mb-3" style="height: 50px;" name="car" id="selectedcar"
                         required="required">
-                        <option value="">Select A Car</option>
                         <option value="ERTIGA">ERTIGA</option>
                         <option value="INNOVA">INNOVA</option>
                         <option value="INNOVA CRYSTA">INNOVA CRYSTA</option>
@@ -230,7 +233,6 @@
             </div>
         </div>
     </form>
-    <!--  -->
 
     <!--  -->
     <!-- Search End -->
@@ -305,6 +307,62 @@
                 </div>
             </div>
         </div>
+        <!--  -->
+        <section id="tariffs" class="dark-bg">
+            <div class="container">
+                <h4 class="yellow">See Our</h4>
+                <h2 class="h1 white" style="color:#FFFFFF;">TARIFFS</h2>
+                <div class="swiper-container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/ukqdgmri.png" class="full-width" alt="" width="150">
+                                </div>
+                                <h4>Sedan</h4>
+                                <p>Sedan for a drive around the city at your service</p>
+                                <div class="price">₹ 11<span>/km</span></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/fd46s5b3.png" class="full-width" alt="" width="150">
+                                </div>
+                                <h4>SUV</h4>
+                                <p>SUV for a drive around the city at your service</p>
+                                <div class="price">₹ 14<span>/km</span></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/de3cx8pe.png" class="full-width" alt="" width="150">
+                                </div>
+                                <h4>VIP</h4>
+                                <p>VIP for a drive around the city at your service</p>
+                                <div class="price">₹ 20<span>/km</span></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/4jbosvgt.png" class="full-width" alt="" width="150">
+                                </div>
+                                <h4>Tempo Travel</h4>
+                                <p>Tempo Travel for a drive around the city at your service</p>
+                                <div class="price">₹ 24<span>/km</span></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
     </div>
 
     <!-- About End -->
@@ -413,12 +471,22 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="/js/jquery-clockpicker.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
+
+        $('#pickup').editableSelect();
+        $('#droplocation').editableSelect();
+        $('#selectedcar').editableSelect();
+        $('#pickup').attr("placeholder", "Enter Pickup Location");
+        $('#droplocation').attr("placeholder", "Enter Drop Location");
+        $('#selectedcar').attr("placeholder", "Select A Car");
+        $('.clockpicker').clockpicker();
         $(document).ready(function () {
             $('form#bookingform').validate({
                 errorClass: "state-error",

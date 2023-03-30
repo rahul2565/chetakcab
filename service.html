@@ -38,6 +38,8 @@
     <script src="./utils/jquery/jquery-3.6.4.min.js"></script>
     <script src="./utils/jquery/jquery.validate.min.js"></script>
     <script src="./utils/jquery/additional-methods.min.js"></script>
+    <script src="/js/jquery-editable-select.min.js"></script>
+    <link href="/css/jquery-editable-select.min.css" rel="stylesheet">
 
 </head>
 
@@ -108,13 +110,11 @@
     <!-- Navbar End -->
 
     <!-- Search Start -->
-    <form id="bookingform" method="get">
+       <form id="bookingform" method="get">
         <div class="container-fluid bg-white pt-3 px-lg-5">
             <div class="row mx-n2">
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                    <select class="custom-select px-4 mb-3" id="pickup" name="pickup" style="height: 50px;"
-                        required="required">
-                        <option value="">Pickup Location</option>
+                    <select class="custom-select px-4 mb-3" id="pickup" name="pickup" style="height: 50px;">
                         <option value="Ahmedabad">Ahmedabad</option>
                         <option value="Surat">Surat</option>
                         <option value="Vadodara">Vadodara</option>
@@ -148,10 +148,9 @@
                         <option value="Jetpur">Jetpur</option>
                     </select>
                 </div>
-                <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                    <select class="custom-select px-4 mb-3" id="droplocation" name="droplocation" style="height: 50px;"
-                        required="required">
-                        <option value="">Drop Location</option>
+                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                    <select class="custom-select px-4 mb-3" id="droplocation" name="droplocation"
+                        aria-placeholder="Enter " style="height: 50px;" required="required">
                         <option value="Ahmedabad">Ahmedabad</option>
                         <option value="Surat">Surat</option>
                         <option value="Vadodara">Vadodara</option>
@@ -185,6 +184,7 @@
                         <option value="Jetpur">Jetpur</option>
                     </select>
                 </div>
+
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
                     <div class="date mb-3" id="date" data-target-input="nearest">
                         <input type="text" class="form-control p-4 datetimepicker-input" name="date" id="pickupdate"
@@ -197,10 +197,11 @@
                             required placeholder="Pickup Time" data-target="#time" data-toggle="datetimepicker" />
                     </div>
                 </div>
+
+
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
                     <select class="custom-select px-4 mb-3" style="height: 50px;" name="car" id="selectedcar"
                         required="required">
-                        <option value="">Select A Car</option>
                         <option value="ERTIGA">ERTIGA</option>
                         <option value="INNOVA">INNOVA</option>
                         <option value="INNOVA CRYSTA">INNOVA CRYSTA</option>
@@ -220,7 +221,14 @@
         </div>
     </form>
 
+
     <script>
+        $('#pickup').editableSelect();
+        $('#droplocation').editableSelect();
+        $('#selectedcar').editableSelect();
+        $('#pickup').attr("placeholder", "Enter Pickup Location");
+        $('#droplocation').attr("placeholder", "Enter Drop Location");
+        $('#selectedcar').attr("placeholder", "Select A Car");
         $(document).ready(function () {
             $('form#bookingform').validate({
                 errorClass: "state-error",

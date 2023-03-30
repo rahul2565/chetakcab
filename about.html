@@ -11,7 +11,7 @@
     <meta name="description"
         content="Chetak cab service & travels India's Leading One Way Inter-City Cab Service provider. Why pay for return journey, if you are traveling one-way.">
     <!-- Favicon -->
-     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -38,6 +38,8 @@
     <script src="./utils/jquery/jquery-3.6.4.min.js"></script>
     <script src="./utils/jquery/jquery.validate.min.js"></script>
     <script src="./utils/jquery/additional-methods.min.js"></script>
+    <script src="/js/jquery-editable-select.min.js"></script>
+    <link href="/css/jquery-editable-select.min.css" rel="stylesheet">
 
 </head>
 
@@ -112,9 +114,7 @@
         <div class="container-fluid bg-white pt-3 px-lg-5">
             <div class="row mx-n2">
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                    <select class="custom-select px-4 mb-3" id="pickup" name="pickup" style="height: 50px;"
-                        required="required">
-                        <option value="">Pickup Location</option>
+                    <select class="custom-select px-4 mb-3" id="pickup" name="pickup" style="height: 50px;">
                         <option value="Ahmedabad">Ahmedabad</option>
                         <option value="Surat">Surat</option>
                         <option value="Vadodara">Vadodara</option>
@@ -149,9 +149,8 @@
                     </select>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                    <select class="custom-select px-4 mb-3" id="droplocation" name="droplocation" style="height: 50px;"
-                        required="required">
-                        <option value="">Drop Location</option>
+                    <select class="custom-select px-4 mb-3" id="droplocation" name="droplocation"
+                        aria-placeholder="Enter " style="height: 50px;" required="required">
                         <option value="Ahmedabad">Ahmedabad</option>
                         <option value="Surat">Surat</option>
                         <option value="Vadodara">Vadodara</option>
@@ -185,6 +184,7 @@
                         <option value="Jetpur">Jetpur</option>
                     </select>
                 </div>
+
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
                     <div class="date mb-3" id="date" data-target-input="nearest">
                         <input type="text" class="form-control p-4 datetimepicker-input" name="date" id="pickupdate"
@@ -197,10 +197,11 @@
                             required placeholder="Pickup Time" data-target="#time" data-toggle="datetimepicker" />
                     </div>
                 </div>
+
+
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
                     <select class="custom-select px-4 mb-3" style="height: 50px;" name="car" id="selectedcar"
                         required="required">
-                        <option value="">Select A Car</option>
                         <option value="ERTIGA">ERTIGA</option>
                         <option value="INNOVA">INNOVA</option>
                         <option value="INNOVA CRYSTA">INNOVA CRYSTA</option>
@@ -219,73 +220,8 @@
             </div>
         </div>
     </form>
-    <script>
-        $(document).ready(function () {
-            $('form#bookingform').validate({
-                errorClass: "state-error",
-                validClass: "state-success",
-                rules: {
-                    pickup: {
-                        required: true,
-                    },
-                    droplocation: {
-                        required: true,
-                    },
-                    date: {
-                        required: true,
-                    },
-                    time: {
-                        required: true,
-                    },
-                    car: {
-                        required: true,
-                    },
-                },
-                messages: {
-                    pickup: {
-                        required: '*Please enter Pick-up Location',
-                    },
-                    droplocation: {
-                        required: '*Please enter Drop Location',
-                    },
-                    date: {
-                        required: '*Please enter Date of Pick-up ',
-                    },
-                    time: {
-                        required: '*Please enter Time',
-                    },
-                    car: {
-                        required: '*Please enter Car',
-                    }
-                },
-                highlight: function (element, errorClass, validClass) {
-                    $(element).closest('.form-group').addClass(errorClass).removeClass(validClass);
-                },
-                unhighlight: function (element, errorClass, validClass) {
-                    $(element).closest('.form-group').removeClass(errorClass).addClass(validClass);
-                },
-                errorPlacement: function (error, element) {
-                    error.insertAfter(element);
-                },
-                submitHandler: function (form) {
-                    var pick_up = $('#pickup').val();
-                    var drop = $('#droplocation').val();
-                    var car = $('#selectedcar').val();
-                    var date = $('#pickupdate').val();
-                    var time = $('#pickuptime').val();
-                    var baseUrl = 'https://wa.me/7433809921?text='
-                    var query = `\n*Pickup Location* :-${pick_up} ,\n*Drop Location* :- ${drop} ,\n*Car* :- ${car} ,\n*Date* :- ${date} ,\n*Time* :- ${time}`
-                    var completeUrl = baseUrl + encodeURIComponent(query)
-                    var form = document.getElementById("bookingform");
-                    form.onsubmit = function () {
-                        window.location = completeUrl;
-                        return false;
-                    };
-                }
-            });
 
-        });
-    </script>
+
     <!--  -->
 
     <!--  -->
@@ -464,6 +400,81 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+
+        $('#pickup').editableSelect();
+        $('#droplocation').editableSelect();
+        $('#selectedcar').editableSelect();
+        $('#pickup').attr("placeholder", "Enter Pickup Location");
+        $('#droplocation').attr("placeholder", "Enter Drop Location");
+        $('#selectedcar').attr("placeholder", "Select A Car");
+
+        $(document).ready(function () {
+            $('form#bookingform').validate({
+                errorClass: "state-error",
+                validClass: "state-success",
+                rules: {
+                    pickup: {
+                        required: true,
+                    },
+                    droplocation: {
+                        required: true,
+                    },
+                    date: {
+                        required: true,
+                    },
+                    time: {
+                        required: true,
+                    },
+                    car: {
+                        required: true,
+                    },
+                },
+                messages: {
+                    pickup: {
+                        required: '*Please enter Pick-up Location',
+                    },
+                    droplocation: {
+                        required: '*Please enter Drop Location',
+                    },
+                    date: {
+                        required: '*Please enter Date of Pick-up ',
+                    },
+                    time: {
+                        required: '*Please enter Time',
+                    },
+                    car: {
+                        required: '*Please enter Car',
+                    }
+                },
+                highlight: function (element, errorClass, validClass) {
+                    $(element).closest('.form-group').addClass(errorClass).removeClass(validClass);
+                },
+                unhighlight: function (element, errorClass, validClass) {
+                    $(element).closest('.form-group').removeClass(errorClass).addClass(validClass);
+                },
+                errorPlacement: function (error, element) {
+                    error.insertAfter(element);
+                },
+                submitHandler: function (form) {
+                    var pick_up = $('#pickup').val();
+                    var drop = $('#droplocation').val();
+                    var car = $('#selectedcar').val();
+                    var date = $('#pickupdate').val();
+                    var time = $('#pickuptime').val();
+                    var baseUrl = 'https://wa.me/7433809921?text='
+                    var query = `\n*Pickup Location* :-${pick_up} ,\n*Drop Location* :- ${drop} ,\n*Car* :- ${car} ,\n*Date* :- ${date} ,\n*Time* :- ${time}`
+                    var completeUrl = baseUrl + encodeURIComponent(query)
+                    var form = document.getElementById("bookingform");
+                    form.onsubmit = function () {
+                        window.location = completeUrl;
+                        return false;
+                    };
+                }
+            });
+
+        });
+    </script>
     </div>
 </body>
 
