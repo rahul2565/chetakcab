@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home - Chetak Cab and Travel Services Rajkot</title>
+    <title>Chetak Cab and Travel Services Rajkot</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="keywords"
         content="✓ Taxi Booking ,✓ Rajkot to Ahmedabad cab,✓ Ahmedabad to Rajkot Cab,✓ Ahmedabad Airport to Rajkot Cab,✓ Rajkot to Ahmedabad Airport cab">
@@ -208,7 +208,7 @@
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2 ">
                     <div class="time mb-3 clockpicker" id="time" data-target-input="nearest">
-                        <input type="text" class="form-control p-4 " name="time" id="pickuptime"
+                        <input type="text" class="form-control p-4 " name="time" id="pickuptime" autocomplete="off"
                             required placeholder="Pickup Time" data-target="#time"  />
                     </div>
                 </div>
@@ -487,6 +487,9 @@
         $('#droplocation').attr("placeholder", "Enter Drop Location");
         $('#selectedcar').attr("placeholder", "Select A Car");
         $('.clockpicker').clockpicker();
+        $('#time').disableAutoFill();
+        $('#date').disableAutoFill();
+
         $(document).ready(function () {
             $('form#bookingform').validate({
                 errorClass: "state-error",
