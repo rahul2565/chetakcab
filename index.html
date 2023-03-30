@@ -209,7 +209,7 @@
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2 ">
                     <div class="time mb-3 clockpicker" id="time" data-target-input="nearest">
                         <input type="text" class="form-control p-4 " name="time" id="pickuptime" autocomplete="off"
-                            required placeholder="Pickup Time" data-target="#time"  />
+                            required placeholder="Pickup Time" data-target="#time" />
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
@@ -491,6 +491,12 @@
         $('#date').disableAutoFill();
 
         $(document).ready(function () {
+
+            fetch('/data.json')
+                .then((response) => response.json())
+                .then((json) => console.log(json));
+
+
             $('form#bookingform').validate({
                 errorClass: "state-error",
                 validClass: "state-success",
