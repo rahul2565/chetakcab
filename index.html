@@ -130,7 +130,7 @@
         <div class="container-fluid bg-white pt-3 px-lg-5">
             <div class="row mx-n2">
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                    <select class="custom-select px-4 mb-3" id="pickup" name="pickup" style="height: 50px;" required>
+                    <select class="custom-select px-4 mb-3 rounded" id="pickup" name="pickup" style="height: 50px;" required>
                         <!-- gujarat -->
                         <option value="Ahmedabad">Ahmedabad</option>
                         <option value="Surat">Surat</option>
@@ -240,7 +240,7 @@
                     </select>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                    <select class="custom-select px-4 mb-3" id="droplocation" name="droplocation"
+                    <select class="custom-select rounded px-4 mb-3" id="droplocation" name="droplocation"
                         aria-placeholder="Enter " style="height: 50px;" required="required">
                         <!-- gujarat -->
                         <option value="Ahmedabad">Ahmedabad</option>
@@ -353,7 +353,7 @@
 
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
                     <div class="date mb-3" id="date" data-target-input="nearest">
-                        <input class="form-control p-4 datetimepicker-input" name="date" id="pickupdate" required
+                        <input class="form-control rounded p-4 datetimepicker-input" name="date" id="pickupdate" required
                             placeholder="Pickup Date" data-target="#date" data-toggle="datetimepicker"
                             inputmode='none' />
                         <span class="input-group-addon">
@@ -363,12 +363,12 @@
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2 ">
                     <div class="time mb-3 clockpicker" id="time" data-target-input="nearest">
-                        <input class="form-control p-4 " name="time" id="pickuptime" autocomplete="off" required
+                        <input class="rounded  form-control p-4 " name="time" id="pickuptime" autocomplete="off" required
                             placeholder="Pickup Time" data-target="#time" inputmode='none' />
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                    <select class="custom-select px-4 mb-3" style="height: 50px;" name="car" id="selectedcar"
+                    <select class="custom-select px-4 mb-3 rounded" style="height: 50px;" name="car" id="selectedcar"
                         required="required">
                         <option value="ERTIGA">ERTIGA</option>
                         <option value="INNOVA">INNOVA</option>
@@ -382,7 +382,7 @@
                     </select>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                    <a href="" id="url"><button class="btn btn-primary btn-block mb-3" id="submit"
+                    <a href="" id="url"><button class="btn btn-primary btn-block mb-3 rounded" id="submit"
                             style="height: 50px;">Search</button></a>
                 </div>
             </div>
@@ -432,35 +432,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mt-3">
-                    <div class="col-lg-4 mb-2">
-                        <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
-                            <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
-                                style="width: 100px; height: 100px;">
-                                <i class="fa fa-2x fa-headset text-secondary"></i>
-                            </div>
-                            <h4 class="text-uppercase m-0">24/7 Car Rental Support</h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-2">
-                        <div class="d-flex align-items-center bg-secondary p-4 mb-4" style="height: 150px;">
-                            <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
-                                style="width: 100px; height: 100px;">
-                                <i class="fa fa-2x fa-car text-secondary"></i>
-                            </div>
-                            <h4 class="text-light text-uppercase m-0">Car Reservation Anytime</h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-2">
-                        <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
-                            <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
-                                style="width: 100px; height: 100px;">
-                                <i class="fa fa-2x fa-map-marker-alt text-secondary"></i>
-                            </div>
-                            <h4 class="text-uppercase m-0">Lots Of Pickup Locations</h4>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             <!--  -->
             <div class="container-fluid py-5">
@@ -535,7 +507,7 @@
                         <div class="col-lg-4 col-md-6 mb-2">
                             <div class="rent-item mb-4">
                                 <h4 class="text-uppercase text-primary mb-4">Rajkot To</h4>
-                                <div class="d-flex justify-content-center mb-4">
+                                <div class="mb-4">
                                     <div>
                                         <i class="fa fa-road text-primary mr-1"></i>
                                         <ul class="text-left">
@@ -563,7 +535,7 @@
                         <div class="col-lg-4 col-md-6 mb-2">
                             <div class="rent-item mb-4">
                                 <h4 class="text-uppercase text-primary mb-4">Ahemdabad To</h4>
-                                <div class="d-flex justify-content-center mb-4">
+                                <div class="mb-4">
                                     <div>
                                         <i class="fa fa-road text-primary mr-1"></i>
                                         <ul class="text-left">
@@ -578,7 +550,7 @@
                                             <li>Ahemdabad - Vadodara</li>
                                             <li>Ahemdabad - Bhuj</li>
                                             <li>Ahemdabad - Bharuch</li>
-                                            <li>Ahemdabad - Ghandhidham</li>
+                                            <li>Ahm'd - Ghandhidham</li>
                                             <li>Ahemdabad - Diu</li>
                                             <li>Ahemdabad - Porbandar</li>
                                             <li>Ahemdabad - Vapi</li>
@@ -591,7 +563,7 @@
                         <div class="col-lg-4 col-md-6 mb-2">
                             <div class="rent-item mb-4">
                                 <h4 class="text-uppercase text-primary mb-4">Surat To</h4>
-                                <div class="d-flex justify-content-center mb-4">
+                                <div class=" mb-4">
                                     <div>
                                         <i class="fa fa-road text-primary mr-1"></i>
                                         <ul class="text-left">
@@ -619,7 +591,7 @@
                         <div class="col-lg-4 col-md-6 mb-2">
                             <div class="rent-item mb-4">
                                 <h4 class="text-uppercase text-primary mb-4">Mumbai To</h4>
-                                <div class="d-flex justify-content-center mb-4">
+                                <div class="mb-4">
                                     <div>
                                         <i class="fa fa-road text-primary mr-1"></i>
                                         <ul class="text-left">
@@ -647,7 +619,7 @@
                         <div class="col-lg-4 col-md-6 mb-2">
                             <div class="rent-item mb-4">
                                 <h4 class="text-uppercase text-primary mb-4">Porbandar To</h4>
-                                <div class="d-flex justify-content-center mb-4">
+                                <div class="mb-4">
                                     <div>
                                         <i class="fa fa-road text-primary mr-1"></i>
                                         <ul class="text-left">
@@ -683,48 +655,7 @@
     <!-- About End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
-        <div class="container">
-            <div class="row pt-5">
-                <div class="col-lg-4 col-md-4 mb-5">
-                    <div class="social-block">
-                        <ul>
-                            <li><a title="Rajkot To Ahmedabad" href="#">Rajkot To Ahmedabad Taxi</a></li>
-                            <li><a title="Pune To Ahmedabad" href="#">Pune To Ahmedabad Taxi</a></li>
-                            <li><a title="Surat To Ahmedabad" href="#">Surat To Ahmedabad Taxi</a></li>
-                            <li><a title="Udaipur To Ahmedabad" href="#">Udaipur To Ahmedabad Taxi</a></li>
-                            <li><a title="Vadodara To Ahmedabad" href="#">Vadodara To Ahmedabad Taxi</a></li>
-                            <li><a title="Gandhidham To Ahmedabad" href="#">Gandhidham To Ahmedabad Taxi</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mb-5">
-                    <div class="social-block">
-                        <ul>
-                            <li><a title="Ahmedabad To Udaipur" href="#">Ahmedabad To Udaipur Taxi</a></li>
-                            <li><a title="Ahmedabad To Vadodara" href="#">Ahmedabad To Vadodara Taxi</a></li>
-                            <li><a title="Ahmedabad To Gandhidham" href="#">Ahmedabad To Gandhidham Taxi</a></li>
-                            <li><a title="Bhuj To Ahmedabad" href="#">Bhuj To Ahmedabad Taxi</a></li>
-                            <li><a title="Jamnagar To Ahmedabad" href="#">Jamnagar To Ahmedabad Taxi</a></li>
-                            <li><a title="Mumbai To Ahmedabad" href="#">Mumbai To Ahmedabad Taxi</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mb-5">
-                    <div class="social-block">
-                        <ul>
-                            <li><a title="Ahmedabad To Bhuj" href="#">Ahmedabad To Bhuj Taxi</a></li>
-                            <li><a title="Ahmedabad To Jamnagar" href="#">Ahmedabad To Jamnagar Taxi</a></li>
-                            <li><a title="Ahmedabad To Mumbai" href="#">Ahmedabad To Mumbai Taxi</a></li>
-                            <li><a title="Ahmedabad To Pune" href="#">Ahmedabad To Pune Taxi</a></li>
-                            <li><a title="Ahmedabad To Rajkot" href="#">Ahmedabad To Rajkot Taxi</a></li>
-                            <li><a title="Ahmedabad To Surat" href="#">Ahmedabad To Surat Taxi</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px">
         <div class="container">
 
             <div class="row pl-4 ">
