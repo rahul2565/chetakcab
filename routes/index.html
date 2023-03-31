@@ -10,13 +10,15 @@
   <meta name="description"
     content="Chetak cab service & travels India's Leading Chetak cab Inter-City Cab Service provider. Why pay for return journey, if you are traveling one-way.">
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../fav/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="mask-icon" href="../fav/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <base href="https://chetakcab.in/">
+
   <!-- Google Web Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap"
@@ -26,19 +28,20 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
 
   <!-- Libraries Stylesheet -->
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+  <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
   <!-- Customized Bootstrap Stylesheet -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Template Stylesheet -->
-  <link href="css/style.css" rel="stylesheet">
-  <script src="./utils/jquery/jquery-3.6.4.min.js"></script>
-  <script src="./utils/jquery/jquery.validate.min.js"></script>
-  <script src="./utils/jquery/additional-methods.min.js"></script>
-  <script src="/js/jquery-editable-select.min.js"></script>
-  <link href="/css/jquery-editable-select.min.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  <script src="../utils/jquery/jquery-3.6.4.min.js"></script>
+  <script src="../utils/jquery/jquery.validate.min.js"></script>
+  <script src="../utils/jquery/additional-methods.min.js"></script>
+  <script src="../js/jquery-editable-select.min.js"></script>
+  <link href="../css/jquery-editable-select.min.css" rel="stylesheet">
+  <link href="/css/jquery-clockpicker.min.css" rel="stylesheet">
 
 </head>
 
@@ -81,9 +84,9 @@
       <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
         <a href="index.html" class="navbar-brand">
           <div class="d-flex align-items-center">
-            <div class="d-flex align-items-center justify-content-center flex-shrink-0  bg-light rounded "
+            <div class="d-flex align-items-center justify-content-center flex-shrink-0  bg-light rounded"
               style="width:  7vh; height: 7vh;">
-              <img src="./img/logo.webp" alt="chetak cab logo image" style="width:  7vh; height: 7vh;">
+              <img src="../img/logo.png" alt="chetak cab logo image" style="width:  7vh; height: 7vh;">
             </div>
             <h1 class="text-uppercase text-primary mb-1 ml-1">Chetak cab</h1>
           </div>
@@ -93,14 +96,12 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
           <div class="navbar-nav ml-auto py-0">
-            <a href="index.html" class="nav-item nav-link ">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="service.html" class="nav-item nav-link">Service</a>
-            <a href="routes.html" class="nav-item nav-link active">routes</a>
-            <div class="nav-item dropdown">
-            </div>
+            <a href="/" class="nav-item nav-link ">Home</a>
+            <a href="/about/" class="nav-item nav-link ">About</a>
+            <a href="/service/" class="nav-item nav-link">Service</a>
+            <a href="/routes/" class="nav-item nav-link active">routes</a>
+            <a href="/contact/" class="nav-item nav-link">CONTACT</a>
           </div>
-          <a href="contact.html" class="nav-item nav-link">CONTACT</a>
         </div>
     </div>
     </nav>
@@ -109,194 +110,271 @@
   <!-- Navbar End -->
 
 
-  <!-- Search Start -->
-  <form id="bookingform" method="get">
-    <div class="container-fluid bg-white pt-3 px-lg-5">
-      <div class="row mx-n2">
-        <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-          <select class="custom-select px-4 mb-3" id="pickup" name="pickup" style="height: 50px;" required="required">
-            <option value="">Pickup Location</option>
-            <option value="Ahmedabad">Ahmedabad</option>
-            <option value="Surat">Surat</option>
-            <option value="Vadodara">Vadodara</option>
-            <option value="Rajkot">Rajkot</option>
-            <option value="Bhavnagar">Bhavnagar</option>
-            <option value="Jamnagar">Jamnagar</option>
-            <option value="Gandhinagar">Gandhinagar</option>
-            <option value="Junagadh">Junagadh</option>
-            <option value="Gandhidham">Gandhidham</option>
-            <option value="Anand">Anand</option>
-            <option value="Navsari">Navsari</option>
-            <option value="Morbi">Morbi</option>
-            <option value="Nadiad">Nadiad</option>
-            <option value="Surendranagar">Surendranagar</option>
-            <option value="Bharuch">Bharuch</option>
-            <option value="Mehsana">Mehsana</option>
-            <option value="Bhuj">Bhuj</option>
-            <option value="Porbandar">Porbandar</option>
-            <option value="Palanpur">Palanpur</option>
-            <option value="Valsad">Valsad</option>
-            <option value="Vapi">Vapi</option>
-            <option value="Gondal">Gondal</option>
-            <option value="Veraval">Veraval</option>
-            <option value="Godhra">Godhra</option>
-            <option value="Patan">Patan</option>
-            <option value="Kalol">Kalol</option>
-            <option value="Dahod">Dahod</option>
-            <option value="Botad">Botad</option>
-            <option value="Amreli">Amreli</option>
-            <option value="Deesa">Deesa</option>
-            <option value="Jetpur">Jetpur</option>
-          </select>
-        </div>
-        <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-          <select class="custom-select px-4 mb-3" id="droplocation" name="droplocation" style="height: 50px;"
-            required="required">
-            <option value="">Drop Location</option>
-            <option value="Ahmedabad">Ahmedabad</option>
-            <option value="Surat">Surat</option>
-            <option value="Vadodara">Vadodara</option>
-            <option value="Rajkot">Rajkot</option>
-            <option value="Bhavnagar">Bhavnagar</option>
-            <option value="Jamnagar">Jamnagar</option>
-            <option value="Gandhinagar">Gandhinagar</option>
-            <option value="Junagadh">Junagadh</option>
-            <option value="Gandhidham">Gandhidham</option>
-            <option value="Anand">Anand</option>
-            <option value="Navsari">Navsari</option>
-            <option value="Morbi">Morbi</option>
-            <option value="Nadiad">Nadiad</option>
-            <option value="Surendranagar">Surendranagar</option>
-            <option value="Bharuch">Bharuch</option>
-            <option value="Mehsana">Mehsana</option>
-            <option value="Bhuj">Bhuj</option>
-            <option value="Porbandar">Porbandar</option>
-            <option value="Palanpur">Palanpur</option>
-            <option value="Valsad">Valsad</option>
-            <option value="Vapi">Vapi</option>
-            <option value="Gondal">Gondal</option>
-            <option value="Veraval">Veraval</option>
-            <option value="Godhra">Godhra</option>
-            <option value="Patan">Patan</option>
-            <option value="Kalol">Kalol</option>
-            <option value="Dahod">Dahod</option>
-            <option value="Botad">Botad</option>
-            <option value="Amreli">Amreli</option>
-            <option value="Deesa">Deesa</option>
-            <option value="Jetpur">Jetpur</option>
-          </select>
-        </div>
-        <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-          <div class="date mb-3" id="date" data-target-input="nearest">
-            <input type="text" class="form-control p-4 datetimepicker-input" name="date" id="pickupdate" required
-              placeholder="Pickup Date" data-target="#date" data-toggle="datetimepicker" />
+     <!-- Search Start -->
+     <form id="bookingform" method="get">
+      <div class="container-fluid bg-white pt-3 px-lg-5">
+          <div class="row mx-n2">
+              <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                  <select class="custom-select px-4 mb-3" id="pickup" name="pickup" style="height: 50px;" required>
+                      <!-- gujarat -->
+                      <option value="Ahmedabad">Ahmedabad</option>
+                      <option value="Surat">Surat</option>
+                      <option value="Vadodara">Vadodara</option>
+                      <option value="Rajkot">Rajkot</option>
+                      <option value="Bhavnagar">Bhavnagar</option>
+                      <option value="Jamnagar">Jamnagar</option>
+                      <option value="Gandhinagar">Gandhinagar</option>
+                      <option value="Junagadh">Junagadh</option>
+                      <option value="Gandhidham">Gandhidham</option>
+                      <option value="Anand">Anand</option>
+                      <option value="Navsari">Navsari</option>
+                      <option value="Morbi">Morbi</option>
+                      <option value="Nadiad">Nadiad</option>
+                      <option value="Surendranagar">Surendranagar</option>
+                      <option value="Bharuch">Bharuch</option>
+                      <option value="Mehsana">Mehsana</option>
+                      <option value="Bhuj">Bhuj</option>
+                      <option value="Porbandar">Porbandar</option>
+                      <option value="Palanpur">Palanpur</option>
+                      <option value="Valsad">Valsad</option>
+                      <option value="Vapi">Vapi</option>
+                      <option value="Gondal">Gondal</option>
+                      <option value="Veraval">Veraval</option>
+                      <option value="Godhra">Godhra</option>
+                      <option value="Patan">Patan</option>
+                      <option value="Kalol">Kalol</option>
+                      <option value="Dahod">Dahod</option>
+                      <option value="Botad">Botad</option>
+                      <option value="Amreli">Amreli</option>
+                      <option value="Deesa">Deesa</option>
+                      <option value="Jetpur">Jetpur</option>
+                      <!-- /end -->
+                      <!-- rajastan -->
+                      <option value="Ajmer">Ajmer</option>
+                      <option value="Alwar">Alwar</option>
+                      <option value="Banswara">Banswara</option>
+                      <option value="Baran">Baran</option>
+                      <option value="Barmer">Barmer</option>
+                      <option value="Bharatpur">Bharatpur</option>
+                      <option value="Bhilwara">Bhilwara</option>
+                      <option value="Bikaner">Bikaner</option>
+                      <option value="Bundi">Bundi</option>
+                      <option value="Chittorgarh">Chittorgarh</option>
+                      <option value="Churu">Churu</option>
+                      <option value="Dausa">Dausa</option>
+                      <option value="Dholpur">Dholpur</option>
+                      <option value="Dungarpur">Dungarpur</option>
+                      <option value="Hanumangarh">Hanumangarh</option>
+                      <option value="Jaipur">Jaipur</option>
+                      <option value="Jaisalmer">Jaisalmer</option>
+                      <option value="Jalore">Jalore</option>
+                      <option value="Jhalawar">Jhalawar</option>
+                      <option value="Jhunjhunu">Jhunjhunu</option>
+                      <option value="Jodhpur">Jodhpur</option>
+                      <option value="Karauli">Karauli</option>
+                      <option value="Kota">Kota</option>
+                      <option value="Nagaur">Nagaur</option>
+                      <option value="Pali">Pali</option>
+                      <option value="Pratapgarh">Pratapgarh</option>
+                      <option value="Rajsamand">Rajsamand</option>
+                      <option value="Sawai Madhopur">Sawai Madhopur</option>
+                      <option value="Sikar">Sikar</option>
+                      <option value="Sirohi">Sirohi</option>
+                      <option value="Tonk">Tonk</option>
+                      <option value="Udaipur">Udaipur</option>
+                      <!-- rajastan over -->
+                      <!-- mumbai -->
+                      <option value="Maharashtra">Maharashtra</option>
+                      <option value="Ahmednagar">Ahmednagar</option>
+                      <option value="Akola">Akola</option>
+                      <option value="Amravati">Amravati</option>
+                      <option value="Aurangabad">Aurangabad</option>
+                      <option value="Beed">Beed</option>
+                      <option value="Bhandara">Bhandara</option>
+                      <option value="Buldhana">Buldhana</option>
+                      <option value="Chandrapur">Chandrapur</option>
+                      <option value="Dhule">Dhule</option>
+                      <option value="Gadchiroli">Gadchiroli</option>
+                      <option value="Gondia">Gondia</option>
+                      <option value="Hingoli">Hingoli</option>
+                      <option value="Jalgaon">Jalgaon</option>
+                      <option value="Jalna">Jalna</option>
+                      <option value="Kolhapur">Kolhapur</option>
+                      <option value="Latur">Latur</option>
+                      <option value="Mumbai City">Mumbai City</option>
+                      <option value="Mumbai Suburban">Mumbai Suburban</option>
+                      <option value="Nagpur">Nagpur</option>
+                      <option value="Nanded">Nanded</option>
+                      <option value="Nandurbar">Nandurbar</option>
+                      <option value="Nashik">Nashik</option>
+                      <option value="Osmanabad">Osmanabad</option>
+                      <option value="Palghar">Palghar</option>
+                      <option value="Parbhani">Parbhani</option>
+                      <option value="Pune">Pune</option>
+                      <option value="Raigad">Raigad</option>
+                      <option value="Ratnagiri">Ratnagiri</option>
+                      <option value="Sangli">Sangli</option>
+                      <option value="Satara">Satara</option>
+                      <option value="Sindhudurg">Sindhudurg</option>
+                      <option value="Solapur">Solapur</option>
+                      <option value="Thane">Thane</option>
+                      <option value="Wardha">Wardha</option>
+                      <option value="Washim">Washim</option>
+                      <option value="Yavatmal">Yavatmal</option>
+                      <!-- mumbai over -->
+                  </select>
+              </div>
+              <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                  <select class="custom-select px-4 mb-3" id="droplocation" name="droplocation"
+                      aria-placeholder="Enter " style="height: 50px;" required="required">
+                      <!-- gujarat -->
+                      <option value="Ahmedabad">Ahmedabad</option>
+                      <option value="Surat">Surat</option>
+                      <option value="Vadodara">Vadodara</option>
+                      <option value="Rajkot">Rajkot</option>
+                      <option value="Bhavnagar">Bhavnagar</option>
+                      <option value="Jamnagar">Jamnagar</option>
+                      <option value="Gandhinagar">Gandhinagar</option>
+                      <option value="Junagadh">Junagadh</option>
+                      <option value="Gandhidham">Gandhidham</option>
+                      <option value="Anand">Anand</option>
+                      <option value="Navsari">Navsari</option>
+                      <option value="Morbi">Morbi</option>
+                      <option value="Nadiad">Nadiad</option>
+                      <option value="Surendranagar">Surendranagar</option>
+                      <option value="Bharuch">Bharuch</option>
+                      <option value="Mehsana">Mehsana</option>
+                      <option value="Bhuj">Bhuj</option>
+                      <option value="Porbandar">Porbandar</option>
+                      <option value="Palanpur">Palanpur</option>
+                      <option value="Valsad">Valsad</option>
+                      <option value="Vapi">Vapi</option>
+                      <option value="Gondal">Gondal</option>
+                      <option value="Veraval">Veraval</option>
+                      <option value="Godhra">Godhra</option>
+                      <option value="Patan">Patan</option>
+                      <option value="Kalol">Kalol</option>
+                      <option value="Dahod">Dahod</option>
+                      <option value="Botad">Botad</option>
+                      <option value="Amreli">Amreli</option>
+                      <option value="Deesa">Deesa</option>
+                      <option value="Jetpur">Jetpur</option>
+                      <!-- /end -->
+                      <!-- rajastan -->
+                      <option value="Ajmer">Ajmer</option>
+                      <option value="Alwar">Alwar</option>
+                      <option value="Banswara">Banswara</option>
+                      <option value="Baran">Baran</option>
+                      <option value="Barmer">Barmer</option>
+                      <option value="Bharatpur">Bharatpur</option>
+                      <option value="Bhilwara">Bhilwara</option>
+                      <option value="Bikaner">Bikaner</option>
+                      <option value="Bundi">Bundi</option>
+                      <option value="Chittorgarh">Chittorgarh</option>
+                      <option value="Churu">Churu</option>
+                      <option value="Dausa">Dausa</option>
+                      <option value="Dholpur">Dholpur</option>
+                      <option value="Dungarpur">Dungarpur</option>
+                      <option value="Hanumangarh">Hanumangarh</option>
+                      <option value="Jaipur">Jaipur</option>
+                      <option value="Jaisalmer">Jaisalmer</option>
+                      <option value="Jalore">Jalore</option>
+                      <option value="Jhalawar">Jhalawar</option>
+                      <option value="Jhunjhunu">Jhunjhunu</option>
+                      <option value="Jodhpur">Jodhpur</option>
+                      <option value="Karauli">Karauli</option>
+                      <option value="Kota">Kota</option>
+                      <option value="Nagaur">Nagaur</option>
+                      <option value="Pali">Pali</option>
+                      <option value="Pratapgarh">Pratapgarh</option>
+                      <option value="Rajsamand">Rajsamand</option>
+                      <option value="Sawai Madhopur">Sawai Madhopur</option>
+                      <option value="Sikar">Sikar</option>
+                      <option value="Sirohi">Sirohi</option>
+                      <option value="Tonk">Tonk</option>
+                      <option value="Udaipur">Udaipur</option>
+                      <!-- rajastan over -->
+                      <!-- mumbai -->
+                      <option value="Maharashtra">Maharashtra</option>
+                      <option value="Ahmednagar">Ahmednagar</option>
+                      <option value="Akola">Akola</option>
+                      <option value="Amravati">Amravati</option>
+                      <option value="Aurangabad">Aurangabad</option>
+                      <option value="Beed">Beed</option>
+                      <option value="Bhandara">Bhandara</option>
+                      <option value="Buldhana">Buldhana</option>
+                      <option value="Chandrapur">Chandrapur</option>
+                      <option value="Dhule">Dhule</option>
+                      <option value="Gadchiroli">Gadchiroli</option>
+                      <option value="Gondia">Gondia</option>
+                      <option value="Hingoli">Hingoli</option>
+                      <option value="Jalgaon">Jalgaon</option>
+                      <option value="Jalna">Jalna</option>
+                      <option value="Kolhapur">Kolhapur</option>
+                      <option value="Latur">Latur</option>
+                      <option value="Mumbai City">Mumbai City</option>
+                      <option value="Mumbai Suburban">Mumbai Suburban</option>
+                      <option value="Nagpur">Nagpur</option>
+                      <option value="Nanded">Nanded</option>
+                      <option value="Nandurbar">Nandurbar</option>
+                      <option value="Nashik">Nashik</option>
+                      <option value="Osmanabad">Osmanabad</option>
+                      <option value="Palghar">Palghar</option>
+                      <option value="Parbhani">Parbhani</option>
+                      <option value="Pune">Pune</option>
+                      <option value="Raigad">Raigad</option>
+                      <option value="Ratnagiri">Ratnagiri</option>
+                      <option value="Sangli">Sangli</option>
+                      <option value="Satara">Satara</option>
+                      <option value="Sindhudurg">Sindhudurg</option>
+                      <option value="Solapur">Solapur</option>
+                      <option value="Thane">Thane</option>
+                      <option value="Wardha">Wardha</option>
+                      <option value="Washim">Washim</option>
+                      <option value="Yavatmal">Yavatmal</option>
+                      <!-- mumbai over -->
+                  </select>
+              </div>
+
+              <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                  <div class="date mb-3" id="date" data-target-input="nearest">
+                      <input class="form-control p-4 datetimepicker-input" name="date" id="pickupdate" required
+                          placeholder="Pickup Date" data-target="#date" data-toggle="datetimepicker"
+                          inputmode='none' />
+                      <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-time"></span>
+                      </span>
+                  </div>
+              </div>
+              <div class="col-xl-2 col-lg-4 col-md-6 px-2 ">
+                  <div class="time mb-3 clockpicker" id="time" data-target-input="nearest">
+                      <input class="form-control p-4 " name="time" id="pickuptime" autocomplete="off" required
+                          placeholder="Pickup Time" data-target="#time" inputmode='none' />
+                  </div>
+              </div>
+              <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                  <select class="custom-select px-4 mb-3" style="height: 50px;" name="car" id="selectedcar"
+                      required="required">
+                      <option value="ERTIGA">ERTIGA</option>
+                      <option value="INNOVA">INNOVA</option>
+                      <option value="INNOVA CRYSTA">INNOVA CRYSTA</option>
+                      <option value="HONDA AMAZE">HONDA AMAZE</option>
+                      <option value="DEZIRE">DEZIRE</option>
+                      <option value="TAVERA">TAVERA</option>
+                      <option value="HONDA CITY">HONDA CITY</option>
+                      <option value="TEMPO TRAVELLER">TEMPO TRAVELLER</option>
+                      <option value="VOLVO">VOLVO</option>
+                  </select>
+              </div>
+              <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                  <a href="" id="url"><button class="btn btn-primary btn-block mb-3" id="submit"
+                          style="height: 50px;">Search</button></a>
+              </div>
           </div>
-        </div>
-        <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-          <div class="time mb-3" id="time" data-target-input="nearest">
-            <input type="text" class="form-control p-4 datetimepicker-input" name="time" id="pickuptime" required
-              placeholder="Pickup Time" data-target="#time" data-toggle="datetimepicker" />
-          </div>
-        </div>
-        <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-          <select class="custom-select px-4 mb-3" style="height: 50px;" name="car" id="selectedcar" required="required">
-            <option value="">Select A Car</option>
-            <option value="ERTIGA">ERTIGA</option>
-            <option value="INNOVA">INNOVA</option>
-            <option value="INNOVA CRYSTA">INNOVA CRYSTA</option>
-            <option value="HONDA AMAZE">HONDA AMAZE</option>
-            <option value="DEZIRE">DEZIRE</option>
-            <option value="TAVERA">TAVERA</option>
-            <option value="HONDA CITY">HONDA CITY</option>
-            <option value="TEMPO TRAVELLER">TEMPO TRAVELLER</option>
-            <option value="VOLVO">VOLVO</option>
-          </select>
-        </div>
-        <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-          <a href="" id="url"><button class="btn btn-primary btn-block mb-3" id="submit"
-              style="height: 50px;">Search</button></a>
-        </div>
       </div>
-    </div>
   </form>
-
-  <script>
-    $('#pickup').editableSelect();
-    $('#droplocation').editableSelect();
-    $('#selectedcar').editableSelect();
-    $('#pickup').attr("placeholder", "Enter Pickup Location");
-    $('#droplocation').attr("placeholder", "Enter Drop Location");
-    $('#selectedcar').attr("placeholder", "Select A Car");
-    $(document).ready(function () {
-      $('form#bookingform').validate({
-        errorClass: "state-error",
-        validClass: "state-success",
-        rules: {
-          pickup: {
-            required: true,
-          },
-          droplocation: {
-            required: true,
-          },
-          date: {
-            required: true,
-          },
-          time: {
-            required: true,
-          },
-          car: {
-            required: true,
-          },
-        },
-        messages: {
-          pickup: {
-            required: '*Please enter Pick-up Location',
-          },
-          droplocation: {
-            required: '*Please enter Drop Location',
-          },
-          date: {
-            required: '*Please enter Date of Pick-up ',
-          },
-          time: {
-            required: '*Please enter Time',
-          },
-          car: {
-            required: '*Please enter Car',
-          }
-        },
-        highlight: function (element, errorClass, validClass) {
-          $(element).closest('.form-group').addClass(errorClass).removeClass(validClass);
-        },
-        unhighlight: function (element, errorClass, validClass) {
-          $(element).closest('.form-group').removeClass(errorClass).addClass(validClass);
-        },
-        errorPlacement: function (error, element) {
-          error.insertAfter(element);
-        },
-        submitHandler: function (form) {
-          var pick_up = $('#pickup').val();
-          var drop = $('#droplocation').val();
-          var car = $('#selectedcar').val();
-          var date = $('#pickupdate').val();
-          var time = $('#pickuptime').val();
-          var baseUrl = 'https://wa.me/7433809921?text='
-          var query = `\n*Pickup Location* :-${pick_up} ,\n*Drop Location* :- ${drop} ,\n*Car* :- ${car} ,\n*Date* :- ${date} ,\n*Time* :- ${time}`
-          var completeUrl = baseUrl + encodeURIComponent(query)
-          var form = document.getElementById("bookingform");
-          form.onsubmit = function () {
-            window.location = completeUrl;
-            return false;
-          };
-        }
-      });
-
-    });
-  </script>
-  <!--  -->
-
-  <!--  -->
   <!-- Search End -->
+
   <!--  -->
   <div class="container text-center pt-4">
     <div class="row">
@@ -6689,114 +6767,189 @@
       <!-- All Routes From Warangal -->
     </div>
   </div>
-  <!-- Footer Start -->
-  <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
-    <div class="container">
-      <div class="row pt-5">
-        <div class="col-lg-4 col-md-4 mb-5">
-          <div class="social-block">
-            <ul>
-              <li><a title="Rajkot To Ahmedabad" href="#">Rajkot To Ahmedabad Taxi</a></li>
-              <li><a title="Pune To Ahmedabad" href="#">Pune To Ahmedabad Taxi</a></li>
-              <li><a title="Surat To Ahmedabad" href="#">Surat To Ahmedabad Taxi</a></li>
-              <li><a title="Udaipur To Ahmedabad" href="#">Udaipur To Ahmedabad Taxi</a></li>
-              <li><a title="Vadodara To Ahmedabad" href="#">Vadodara To Ahmedabad Taxi</a></li>
-              <li><a title="Gandhidham To Ahmedabad" href="#">Gandhidham To Ahmedabad Taxi</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 mb-5">
-          <div class="social-block">
-            <ul>
-              <li><a title="Ahmedabad To Udaipur" href="#">Ahmedabad To Udaipur Taxi</a></li>
-              <li><a title="Ahmedabad To Vadodara" href="#">Ahmedabad To Vadodara Taxi</a></li>
-              <li><a title="Ahmedabad To Gandhidham" href="#">Ahmedabad To Gandhidham Taxi</a></li>
-              <li><a title="Bhuj To Ahmedabad" href="#">Bhuj To Ahmedabad Taxi</a></li>
-              <li><a title="Jamnagar To Ahmedabad" href="#">Jamnagar To Ahmedabad Taxi</a></li>
-              <li><a title="Mumbai To Ahmedabad" href="#">Mumbai To Ahmedabad Taxi</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 mb-5">
-          <div class="social-block">
-            <ul>
-              <li><a title="Ahmedabad To Bhuj" href="#">Ahmedabad To Bhuj Taxi</a></li>
-              <li><a title="Ahmedabad To Jamnagar" href="#">Ahmedabad To Jamnagar Taxi</a></li>
-              <li><a title="Ahmedabad To Mumbai" href="#">Ahmedabad To Mumbai Taxi</a></li>
-              <li><a title="Ahmedabad To Pune" href="#">Ahmedabad To Pune Taxi</a></li>
-              <li><a title="Ahmedabad To Rajkot" href="#">Ahmedabad To Rajkot Taxi</a></li>
-              <li><a title="Ahmedabad To Surat" href="#">Ahmedabad To Surat Taxi</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-
-      <div class="row pl-4 ">
-        <div class="col-lg-6 col-md-4 mb-5">
-          <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
-          <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>
-            <a
-              href="https://www.google.com/maps/place/Shiromani+Complex./@22.2947562,70.803773,21z/data=!4m16!1m9!3m8!1s0x3959ca05b2c41357:0xd4e11d56eae10d32!2sShiromani+complex,+Bhupendra+Road,+Diwanpara,+Rajkot,+Gujarat+360001!3b1!8m2!3d22.2946735!4d70.8039354!10e5!16s%2Fg%2F11ghf81f5t!3m5!1s0x3959ca044d647a2f:0x2b63cdcb2b1a7d30!8m2!3d22.29485!4d70.803844!16s%2Fg%2F11b7221wd6">
-              Shiromani complex,
-          </p> Bhupendra Road, Diwanpara, </p> Rajkot-360001, Gujarat</a></p>
-          <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"><a href="tel:7433809921"></i>+91
-            7433809921</a></p>
-          <p><i class="fa fa-envelope text-white mr-3"><a
-                href="mailto:akshaychavda094@gmail.com"></i>akshaychavda094@gmail.com</a></p>
-          <h6 class="text-uppercase text-white py-2">Follow Us</h6>
-          <div class="d-flex justify-content-start">
-            <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="https://wa.me/+917433809921"><i
-                class="fab fa-whatsapp"></i></a>
-            <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="https://wa.me/+917433809921"><i
-                class="fab fa-twitter"></i></a>
-            <a class="btn btn-lg btn-dark btn-lg-square mr-2"
-              href="https://instagram.com/chetak_tourism?igshid=MjljNjAzYmU="><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-lg btn-dark btn-lg-square"
-              href="https://instagram.com/chetak_tourism?igshid=MjljNjAzYmU="><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-4 mb-5 ">
-          <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
-          <p class="mb-4">Subscribe For Daily New Offers</p>
-          <div class="w-100 mb-3">
-            <div class="input-group">
-              <input type="text" class="form-control bg-dark border-dark" style="padding: 25px;"
-                placeholder="Your Email">
-              <div class="input-group-append">
-                <button class="btn btn-primary text-uppercase px-3">Sign Up</button>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
+      <div class="container">
+          <div class="row pt-5">
+              <div class="col-lg-4 col-md-4 mb-5">
+                  <div class="social-block">
+                      <ul>
+                          <li><a title="Rajkot To Ahmedabad" href="#">Rajkot To Ahmedabad Taxi</a></li>
+                          <li><a title="Pune To Ahmedabad" href="#">Pune To Ahmedabad Taxi</a></li>
+                          <li><a title="Surat To Ahmedabad" href="#">Surat To Ahmedabad Taxi</a></li>
+                          <li><a title="Udaipur To Ahmedabad" href="#">Udaipur To Ahmedabad Taxi</a></li>
+                          <li><a title="Vadodara To Ahmedabad" href="#">Vadodara To Ahmedabad Taxi</a></li>
+                          <li><a title="Gandhidham To Ahmedabad" href="#">Gandhidham To Ahmedabad Taxi</a></li>
+                      </ul>
+                  </div>
               </div>
-            </div>
+              <div class="col-lg-4 col-md-4 mb-5">
+                  <div class="social-block">
+                      <ul>
+                          <li><a title="Ahmedabad To Udaipur" href="#">Ahmedabad To Udaipur Taxi</a></li>
+                          <li><a title="Ahmedabad To Vadodara" href="#">Ahmedabad To Vadodara Taxi</a></li>
+                          <li><a title="Ahmedabad To Gandhidham" href="#">Ahmedabad To Gandhidham Taxi</a></li>
+                          <li><a title="Bhuj To Ahmedabad" href="#">Bhuj To Ahmedabad Taxi</a></li>
+                          <li><a title="Jamnagar To Ahmedabad" href="#">Jamnagar To Ahmedabad Taxi</a></li>
+                          <li><a title="Mumbai To Ahmedabad" href="#">Mumbai To Ahmedabad Taxi</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 mb-5">
+                  <div class="social-block">
+                      <ul>
+                          <li><a title="Ahmedabad To Bhuj" href="#">Ahmedabad To Bhuj Taxi</a></li>
+                          <li><a title="Ahmedabad To Jamnagar" href="#">Ahmedabad To Jamnagar Taxi</a></li>
+                          <li><a title="Ahmedabad To Mumbai" href="#">Ahmedabad To Mumbai Taxi</a></li>
+                          <li><a title="Ahmedabad To Pune" href="#">Ahmedabad To Pune Taxi</a></li>
+                          <li><a title="Ahmedabad To Rajkot" href="#">Ahmedabad To Rajkot Taxi</a></li>
+                          <li><a title="Ahmedabad To Surat" href="#">Ahmedabad To Surat Taxi</a></li>
+                      </ul>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
+      <div class="container">
+
+          <div class="row pl-4 ">
+              <div class="col-lg-6 col-md-4 mb-5">
+                  <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
+                  <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>
+                      <a
+                          href="https://www.google.com/maps/place/Shiromani+Complex./@22.2947562,70.803773,21z/data=!4m16!1m9!3m8!1s0x3959ca05b2c41357:0xd4e11d56eae10d32!2sShiromani+complex,+Bhupendra+Road,+Diwanpara,+Rajkot,+Gujarat+360001!3b1!8m2!3d22.2946735!4d70.8039354!10e5!16s%2Fg%2F11ghf81f5t!3m5!1s0x3959ca044d647a2f:0x2b63cdcb2b1a7d30!8m2!3d22.29485!4d70.803844!16s%2Fg%2F11b7221wd6">
+                          Shiromani complex,
+                  </p> Bhupendra Road, Diwanpara, </p> Rajkot-360001, Gujarat</a></p>
+                  <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"><a href="tel:7433809921"></i>+91
+                      7433809921</a></p>
+                  <p><i class="fa fa-envelope text-white mr-3"><a
+                              href="mailto:akshaychavda094@gmail.com"></i>akshaychavda094@gmail.com</a></p>
+                  <h6 class="text-uppercase text-white py-2">Follow Us</h6>
+                  <div class="d-flex justify-content-start">
+                      <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="https://wa.me/+917433809921"><i
+                              class="fab fa-whatsapp"></i></a>
+                      <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="https://wa.me/+917433809921"><i
+                              class="fab fa-twitter"></i></a>
+                      <a class="btn btn-lg btn-dark btn-lg-square mr-2"
+                          href="https://instagram.com/chetak_tourism?igshid=MjljNjAzYmU="><i
+                              class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-lg btn-dark btn-lg-square"
+                          href="https://instagram.com/chetak_tourism?igshid=MjljNjAzYmU="><i
+                              class="fab fa-instagram"></i></a>
+                  </div>
+              </div>
+              <div class="col-lg-6 col-md-4 mb-5 ">
+                  <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
+                  <p class="mb-4">Subscribe For Daily New Offers</p>
+                  <div class="w-100 mb-3">
+                      <div class="input-group">
+                          <input type="text" class="form-control bg-dark border-dark" style="padding: 25px;"
+                              placeholder="Your Email">
+                          <div class="input-group-append">
+                              <button class="btn btn-primary text-uppercase px-3">Sign Up</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
   <div class="container-fluid bg-dark py-4 px-sm-3 px-md-5">
-    <p class="mb-2 text-center text-body">&copy; <a href="#">Chetakcab.in</a>. All Rights Reserved.</p>
-    <p class="m-0 text-center text-body">Designed by <a href="https://shivayinfotech.org/">Shivay infotech</a></p>
+      <p class="mb-2 text-center text-body">&copy; <a href="#">Chetakcab.in</a>. All Rights Reserved.</p>
+      <p class="m-0 text-center text-body">Designed by <a href="https://shivayinfotech.org/">Shivay infotech</a>
+      </p>
   </div>
   <!-- Footer End -->
-
-
   <!-- Back to Top -->
   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
   <!-- JavaScript Libraries -->
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/tempusdominus/js/moment.min.js"></script>
-  <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-  <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/waypoints/waypoints.min.js"></script>
+  <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="../lib/tempusdominus/js/moment.min.js"></script>
+  <script src="../lib/tempusdominus/js/moment-timezone.min.js"></script>
+  <script src="../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+  <script src="../js/jquery-clockpicker.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
   <!-- Template Javascript -->
-  <script src="js/main.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+
+      $('#pickup').editableSelect();
+      $('#droplocation').editableSelect();
+      $('#selectedcar').editableSelect();
+      $('#pickup').attr("placeholder", "Enter Pickup Location");
+      $('#droplocation').attr("placeholder", "Enter Drop Location");
+      $('#selectedcar').attr("placeholder", "Select A Car");
+      $('.clockpicker').clockpicker();
+
+      $(document).ready(function () {
+          $('form#bookingform').validate({
+              errorClass: "state-error",
+              validClass: "state-success",
+              rules: {
+                  pickup: {
+                      required: true,
+                  },
+                  droplocation: {
+                      required: true,
+                  },
+                  date: {
+                      required: true,
+                  },
+                  time: {
+                      required: true,
+                  },
+                  car: {
+                      required: true,
+                  },
+              },
+              messages: {
+                  pickup: {
+                      required: '*Please enter Pick-up Location',
+                  },
+                  droplocation: {
+                      required: '*Please enter Drop Location',
+                  },
+                  date: {
+                      required: '*Please enter Date of Pick-up ',
+                  },
+                  time: {
+                      required: '*Please enter Time',
+                  },
+                  car: {
+                      required: '*Please enter Car',
+                  }
+              },
+              highlight: function (element, errorClass, validClass) {
+                  $(element).closest('.form-group').addClass(errorClass).removeClass(validClass);
+              },
+              unhighlight: function (element, errorClass, validClass) {
+                  $(element).closest('.form-group').removeClass(errorClass).addClass(validClass);
+              },
+              errorPlacement: function (error, element) {
+                  error.insertAfter(element);
+              },
+              submitHandler: function (form) {
+                  var pick_up = $('#pickup').val();
+                  var drop = $('#droplocation').val();
+                  var car = $('#selectedcar').val();
+                  var date = $('#pickupdate').val();
+                  var time = $('#pickuptime').val();
+                  var baseUrl = 'https://wa.me/7433809921?text='
+                  var query = `\n*Pickup Location* :-${pick_up} ,\n*Drop Location* :- ${drop} ,\n*Car* :- ${car} ,\n*Date* :- ${date} ,\n*Time* :- ${time}`
+                  var completeUrl = baseUrl + encodeURIComponent(query)
+                  var form = document.getElementById("bookingform");
+                  form.onsubmit = function () {
+                      window.location = completeUrl;
+                      return false;
+                  };
+              }
+          });
+
+      });
+  </script>
   </div>
 </body>
 

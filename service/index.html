@@ -4,18 +4,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title>About - Chetak Cab and travels service Rajkot</title>
+    <title>Service - Chetak Cab Service</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="keywords"
-        content="One Way Cab, One Way Taxi Service , One Way Car Rental, Car Rental One Way, One Side Car Hire in India, Taxi One Way, Book One Way Car on Rent, One Way Car Rental, India One Way Taxi Service, One Way Taxi Hire in India, Taxi Booking One Way">
+        content="Chetak cab Cab, Chetak cab Taxi Service , Chetak cab Car Rental, Car Rental Chetak cab, One Side Car Hire in India, Taxi Chetak cab, Book Chetak cab Car on Rent, Chetak cab Car Rental, India Chetak cab Taxi Service, Chetak cab Taxi Hire in India, Taxi Booking Chetak cab">
     <meta name="description"
-        content="Chetak cab service & travels India's Leading One Way Inter-City Cab Service provider. Why pay for return journey, if you are traveling one-way.">
+        content="Chetak cab service & travels India's Leading Chetak cab Inter-City Cab Service provider. Why pay for return journey, if you are traveling one-way.">
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../fav/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="../fav/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- Google Web Fonts -->
@@ -27,20 +27,20 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <script src="./utils/jquery/jquery-3.6.4.min.js"></script>
-    <script src="./utils/jquery/jquery.validate.min.js"></script>
-    <script src="./utils/jquery/additional-methods.min.js"></script>
-    <script src="/js/jquery-editable-select.min.js"></script>
-    <link href="/css/jquery-editable-select.min.css" rel="stylesheet">
-
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../utils/jquery/jquery-3.6.4.min.js"></script>
+    <script src="../utils/jquery/jquery.validate.min.js"></script>
+    <script src="../utils/jquery/additional-methods.min.js"></script>
+    <script src="../js/jquery-editable-select.min.js"></script>
+    <link href="../css/jquery-editable-select.min.css" rel="stylesheet">
+    <link href="../css/jquery-clockpicker.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -84,7 +84,7 @@
                     <div class="d-flex align-items-center">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0  bg-light rounded"
                             style="width:  7vh; height: 7vh;">
-                            <img src="./img/logo.png" alt="chetak cab logo image" style="width:  7vh; height: 7vh;">
+                            <img src="../img/logo.png" alt="chetak cab logo image" style="width:  7vh; height: 7vh;">
                         </div>
                         <h1 class="text-uppercase text-primary mb-1 ml-1">Chetak cab</h1>
                     </div>
@@ -94,14 +94,12 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link ">Home</a>
-                        <a href="about.html" class="nav-item nav-link active">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a> <a href="routes.html"
-                            class="nav-item nav-link">routes</a>
-                        <div class="nav-item dropdown">
-                        </div>
+                        <a href="/" class="nav-item nav-link ">Home</a>
+                        <a href="/about/" class="nav-item nav-link ">About</a>
+                        <a href="/service/" class="nav-item nav-link active">Service</a>
+                        <a href="/routes/" class="nav-item nav-link">routes</a>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">CONTACT</a>
+                    <a href="/contact/" class="nav-item nav-link">CONTACT</a>
                 </div>
         </div>
         </nav>
@@ -114,7 +112,8 @@
         <div class="container-fluid bg-white pt-3 px-lg-5">
             <div class="row mx-n2">
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                    <select class="custom-select px-4 mb-3" id="pickup" name="pickup" style="height: 50px;">
+                    <select class="custom-select px-4 mb-3" id="pickup" name="pickup" style="height: 50px;" required>
+                        <!-- gujarat -->
                         <option value="Ahmedabad">Ahmedabad</option>
                         <option value="Surat">Surat</option>
                         <option value="Vadodara">Vadodara</option>
@@ -146,11 +145,86 @@
                         <option value="Amreli">Amreli</option>
                         <option value="Deesa">Deesa</option>
                         <option value="Jetpur">Jetpur</option>
+                        <!-- /end -->
+                        <!-- rajastan -->
+                        <option value="Ajmer">Ajmer</option>
+                        <option value="Alwar">Alwar</option>
+                        <option value="Banswara">Banswara</option>
+                        <option value="Baran">Baran</option>
+                        <option value="Barmer">Barmer</option>
+                        <option value="Bharatpur">Bharatpur</option>
+                        <option value="Bhilwara">Bhilwara</option>
+                        <option value="Bikaner">Bikaner</option>
+                        <option value="Bundi">Bundi</option>
+                        <option value="Chittorgarh">Chittorgarh</option>
+                        <option value="Churu">Churu</option>
+                        <option value="Dausa">Dausa</option>
+                        <option value="Dholpur">Dholpur</option>
+                        <option value="Dungarpur">Dungarpur</option>
+                        <option value="Hanumangarh">Hanumangarh</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Jaisalmer">Jaisalmer</option>
+                        <option value="Jalore">Jalore</option>
+                        <option value="Jhalawar">Jhalawar</option>
+                        <option value="Jhunjhunu">Jhunjhunu</option>
+                        <option value="Jodhpur">Jodhpur</option>
+                        <option value="Karauli">Karauli</option>
+                        <option value="Kota">Kota</option>
+                        <option value="Nagaur">Nagaur</option>
+                        <option value="Pali">Pali</option>
+                        <option value="Pratapgarh">Pratapgarh</option>
+                        <option value="Rajsamand">Rajsamand</option>
+                        <option value="Sawai Madhopur">Sawai Madhopur</option>
+                        <option value="Sikar">Sikar</option>
+                        <option value="Sirohi">Sirohi</option>
+                        <option value="Tonk">Tonk</option>
+                        <option value="Udaipur">Udaipur</option>
+                        <!-- rajastan over -->
+                        <!-- mumbai -->
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Ahmednagar">Ahmednagar</option>
+                        <option value="Akola">Akola</option>
+                        <option value="Amravati">Amravati</option>
+                        <option value="Aurangabad">Aurangabad</option>
+                        <option value="Beed">Beed</option>
+                        <option value="Bhandara">Bhandara</option>
+                        <option value="Buldhana">Buldhana</option>
+                        <option value="Chandrapur">Chandrapur</option>
+                        <option value="Dhule">Dhule</option>
+                        <option value="Gadchiroli">Gadchiroli</option>
+                        <option value="Gondia">Gondia</option>
+                        <option value="Hingoli">Hingoli</option>
+                        <option value="Jalgaon">Jalgaon</option>
+                        <option value="Jalna">Jalna</option>
+                        <option value="Kolhapur">Kolhapur</option>
+                        <option value="Latur">Latur</option>
+                        <option value="Mumbai City">Mumbai City</option>
+                        <option value="Mumbai Suburban">Mumbai Suburban</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Nanded">Nanded</option>
+                        <option value="Nandurbar">Nandurbar</option>
+                        <option value="Nashik">Nashik</option>
+                        <option value="Osmanabad">Osmanabad</option>
+                        <option value="Palghar">Palghar</option>
+                        <option value="Parbhani">Parbhani</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Raigad">Raigad</option>
+                        <option value="Ratnagiri">Ratnagiri</option>
+                        <option value="Sangli">Sangli</option>
+                        <option value="Satara">Satara</option>
+                        <option value="Sindhudurg">Sindhudurg</option>
+                        <option value="Solapur">Solapur</option>
+                        <option value="Thane">Thane</option>
+                        <option value="Wardha">Wardha</option>
+                        <option value="Washim">Washim</option>
+                        <option value="Yavatmal">Yavatmal</option>
+                        <!-- mumbai over -->
                     </select>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
                     <select class="custom-select px-4 mb-3" id="droplocation" name="droplocation"
                         aria-placeholder="Enter " style="height: 50px;" required="required">
+                        <!-- gujarat -->
                         <option value="Ahmedabad">Ahmedabad</option>
                         <option value="Surat">Surat</option>
                         <option value="Vadodara">Vadodara</option>
@@ -182,23 +256,99 @@
                         <option value="Amreli">Amreli</option>
                         <option value="Deesa">Deesa</option>
                         <option value="Jetpur">Jetpur</option>
+                        <!-- /end -->
+                        <!-- rajastan -->
+                        <option value="Ajmer">Ajmer</option>
+                        <option value="Alwar">Alwar</option>
+                        <option value="Banswara">Banswara</option>
+                        <option value="Baran">Baran</option>
+                        <option value="Barmer">Barmer</option>
+                        <option value="Bharatpur">Bharatpur</option>
+                        <option value="Bhilwara">Bhilwara</option>
+                        <option value="Bikaner">Bikaner</option>
+                        <option value="Bundi">Bundi</option>
+                        <option value="Chittorgarh">Chittorgarh</option>
+                        <option value="Churu">Churu</option>
+                        <option value="Dausa">Dausa</option>
+                        <option value="Dholpur">Dholpur</option>
+                        <option value="Dungarpur">Dungarpur</option>
+                        <option value="Hanumangarh">Hanumangarh</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Jaisalmer">Jaisalmer</option>
+                        <option value="Jalore">Jalore</option>
+                        <option value="Jhalawar">Jhalawar</option>
+                        <option value="Jhunjhunu">Jhunjhunu</option>
+                        <option value="Jodhpur">Jodhpur</option>
+                        <option value="Karauli">Karauli</option>
+                        <option value="Kota">Kota</option>
+                        <option value="Nagaur">Nagaur</option>
+                        <option value="Pali">Pali</option>
+                        <option value="Pratapgarh">Pratapgarh</option>
+                        <option value="Rajsamand">Rajsamand</option>
+                        <option value="Sawai Madhopur">Sawai Madhopur</option>
+                        <option value="Sikar">Sikar</option>
+                        <option value="Sirohi">Sirohi</option>
+                        <option value="Tonk">Tonk</option>
+                        <option value="Udaipur">Udaipur</option>
+                        <!-- rajastan over -->
+                        <!-- mumbai -->
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Ahmednagar">Ahmednagar</option>
+                        <option value="Akola">Akola</option>
+                        <option value="Amravati">Amravati</option>
+                        <option value="Aurangabad">Aurangabad</option>
+                        <option value="Beed">Beed</option>
+                        <option value="Bhandara">Bhandara</option>
+                        <option value="Buldhana">Buldhana</option>
+                        <option value="Chandrapur">Chandrapur</option>
+                        <option value="Dhule">Dhule</option>
+                        <option value="Gadchiroli">Gadchiroli</option>
+                        <option value="Gondia">Gondia</option>
+                        <option value="Hingoli">Hingoli</option>
+                        <option value="Jalgaon">Jalgaon</option>
+                        <option value="Jalna">Jalna</option>
+                        <option value="Kolhapur">Kolhapur</option>
+                        <option value="Latur">Latur</option>
+                        <option value="Mumbai City">Mumbai City</option>
+                        <option value="Mumbai Suburban">Mumbai Suburban</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Nanded">Nanded</option>
+                        <option value="Nandurbar">Nandurbar</option>
+                        <option value="Nashik">Nashik</option>
+                        <option value="Osmanabad">Osmanabad</option>
+                        <option value="Palghar">Palghar</option>
+                        <option value="Parbhani">Parbhani</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Raigad">Raigad</option>
+                        <option value="Ratnagiri">Ratnagiri</option>
+                        <option value="Sangli">Sangli</option>
+                        <option value="Satara">Satara</option>
+                        <option value="Sindhudurg">Sindhudurg</option>
+                        <option value="Solapur">Solapur</option>
+                        <option value="Thane">Thane</option>
+                        <option value="Wardha">Wardha</option>
+                        <option value="Washim">Washim</option>
+                        <option value="Yavatmal">Yavatmal</option>
+                        <!-- mumbai over -->
                     </select>
                 </div>
 
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
                     <div class="date mb-3" id="date" data-target-input="nearest">
-                        <input type="text" class="form-control p-4 datetimepicker-input" name="date" id="pickupdate"
-                            required placeholder="Pickup Date" data-target="#date" data-toggle="datetimepicker" />
+                        <input class="form-control p-4 datetimepicker-input" name="date" id="pickupdate" required
+                            placeholder="Pickup Date" data-target="#date" data-toggle="datetimepicker"
+                            inputmode='none' />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </span>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                    <div class="time mb-3" id="time" data-target-input="nearest">
-                        <input type="text" class="form-control p-4 datetimepicker-input" name="time" id="pickuptime"
-                            required placeholder="Pickup Time" data-target="#time" data-toggle="datetimepicker" />
+                <div class="col-xl-2 col-lg-4 col-md-6 px-2 ">
+                    <div class="time mb-3 clockpicker" id="time" data-target-input="nearest">
+                        <input class="form-control p-4 " name="time" id="pickuptime" autocomplete="off" required
+                            placeholder="Pickup Time" data-target="#time" inputmode='none' />
                     </div>
                 </div>
-
-
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
                     <select class="custom-select px-4 mb-3" style="height: 50px;" name="car" id="selectedcar"
                         required="required">
@@ -220,75 +370,117 @@
             </div>
         </div>
     </form>
-
-
-    <!--  -->
-
-    <!--  -->
     <!-- Search End -->
-    <!--Remaining section-->
-
-
+    <!-- header end -->
     <!-- Page Header Start -->
     <div class="container-fluid page-header">
-        <h1 class="display-3 text-uppercase text-white mb-3">About</h1>
+        <h1 class="display-3 text-uppercase text-white mb-3">Service</h1>
         <div class="d-inline-flex text-white">
             <h6 class="text-uppercase m-0"><a class="text-white" href="">Home</a></h6>
             <h6 class="text-body m-0 px-3">/</h6>
-            <h6 class="text-uppercase text-body m-0">About</h6>
+            <h6 class="text-uppercase text-body m-0">Service</h6>
         </div>
     </div>
     <!-- Page Header Start -->
-    <!-- header end -->
 
-
-    <!-- About Start -->
+    <!-- Services Start -->
     <div class="container-fluid py-5">
-        <div class="container pt-3 pb-3">
-            <h1 class="display-4 text-uppercase text-center mb-5"><span class="text-primary">Chetak
-                    cab</span> Allows</h1>
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center">
-                    <img class="w-75 mb-4" src="img/about1.png" alt="cab service image">
-                    <p>Have you travelled one-way from one city to another, and paid both way charges?
-                        Chetak Cab is India’s Leading One-Way Inter City Cab Service Provider.
-                        Now when you travel one-way inter-city, you pay one-way.
-                    </p>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-lg-4 mb-2">
-                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
-                            style="width: 100px; height: 100px;">
-                            <i class="fa fa-2x fa-headset text-secondary"></i>
+        <div class="container pt-5 pb-3">
+            <h1 class="display-4 text-uppercase text-center mb-5">Our Services</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-taxi text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">01</h1>
                         </div>
-                        <h4 class="text-uppercase m-0">24/7 Car Rental Support</h4>
+                        <h4 class="text-uppercase mb-3">On-Time Cab</h4>
+                        <p class="m-0">Using Predictive Algorithm using GPS and Traffic Conditions, each cab is
+                            tracked
+                            for On-Time Arrival. We ensure cab arrives on time at your pick-up destination.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-2">
-                    <div class="d-flex align-items-center bg-secondary p-4 mb-4" style="height: 150px;">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
-                            style="width: 100px; height: 100px;">
-                            <i class="fa fa-2x fa-car text-secondary"></i>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item active d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-money-check-alt text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">02</h1>
                         </div>
-                        <h4 class="text-light text-uppercase m-0">Car Reservation Anytime</h4>
+                        <h4 class="text-uppercase mb-3">No Extra KMs Charge</h4>
+                        <p class="m-0">We do not charge based on KMs. There is no extra KMs Fare applicable. Get
+                            Peace
+                            of Mind, so that driver doesn’t overcharge you by taking a detour.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-2">
-                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
-                            style="width: 100px; height: 100px;">
-                            <i class="fa fa-2x fa-map-marker-alt text-secondary"></i>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-car text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">03</h1>
                         </div>
-                        <h4 class="text-uppercase m-0">Lots Of Pickup Locations</h4>
+                        <h4 class="text-uppercase mb-3">Home Pickup & Drop</h4>
+                        <p class="m-0">Your pick-up address can be anywhere in pick-up city and drop address can be
+                            anywhere in destination city including Airport.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fas fa-rupee-sign text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">04</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Multi Payment Options</h4>
+                        <p class="m-0">By Cash at the end of Journey or Pre-Pay via Net-Banking, Credit Card, PayTM
+                            wallet plus many more.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x far fa-id-card text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">05</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Safe & Convenient Ride</h4>
+                        <p class="m-0">Enabled via our specialized experience of last 2 yrs enabled by our tech
+                            platform.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x  far fa-money-bill-alt text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">06</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">No Advance Payment</h4>
+                        <p class="m-0">Required for booking of Cab</p>
+                        </p>
+                        <div></div>
+                        </p>
+                        <div></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- About End -->
-
+    <!-- Services End -->
     <!-- Footer Start -->
     <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
         <div class="container">
@@ -381,25 +573,21 @@
         </p>
     </div>
     <!-- Footer End -->
-
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
     <!-- JavaScript Libraries -->
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="/lib/easing/easing.min.js"></script>
+    <script src="/lib/waypoints/waypoints.min.js"></script>
+    <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="/js/jquery-clockpicker.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
     <script>
 
         $('#pickup').editableSelect();
@@ -408,6 +596,7 @@
         $('#pickup').attr("placeholder", "Enter Pickup Location");
         $('#droplocation').attr("placeholder", "Enter Drop Location");
         $('#selectedcar').attr("placeholder", "Select A Car");
+        $('.clockpicker').clockpicker();
 
         $(document).ready(function () {
             $('form#bookingform').validate({
