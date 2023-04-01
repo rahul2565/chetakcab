@@ -58,75 +58,10 @@
     <script src="/js/jquery-editable-select.min.js"></script>
     <link href="/css/jquery-editable-select.min.css" rel="stylesheet">
     <link href="/css/jquery-clockpicker.min.css" rel="stylesheet">
+    <link href="/css/nav-bar.css" rel="stylesheet">
 </head>
 
 <body>
-    <style>
-        .logoimg img {
-            height: 7vh;
-            width: 7vh;
-            padding-bottom: 2px;
-        }
-
-        .navbar {
-            position: relative;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0.5rem 1rem;
-        }
-
-        @media only screen and (max-width: 991px) {
-            body {
-                background-color: lightblue;
-            }
-
-            .navbar {
-                position: sticky;
-                display: block;
-                flex-wrap: wrap;
-                padding-left: 0%;
-                padding-right: 0%;
-                padding-bottom: 2rem !important;
-            }
-
-            .navbar-toggler {
-                position: relative;
-                top: -28px;
-                left: 18px;
-                z-index: 1;
-                height: 70px;
-                width: 70px;
-            }
-
-            .logoimg img {
-                padding-bottom: 2px;
-                position: relative;
-                margin-left: auto;
-                margin-right: auto;
-                left: 66px;
-                right: 0;
-                text-align: center;
-                height: 10vh;
-                width: 10vh;
-                background-color: aliceblue;
-                border-radius: 15%;
-            }
-
-            .herotext {
-                padding-top: 2rem;
-                position: relative;
-                margin-left: auto;
-                margin-right: auto;
-                top: 47px;
-                left: -52px;
-                right: 0;
-                text-align: center;
-            }
-
-        }
-    </style>
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
         <div class="row">
@@ -168,8 +103,7 @@
                 </button>
                 <a href="" class="navbar-brand">
                     <div class="d-flex align-items-center">
-                        <div
-                            class="d-flex logoimg align-items-center justify-content-center flex-shrink-0  rounded">
+                        <div class="d-flex logoimg align-items-center justify-content-center flex-shrink-0  rounded">
                             <img src="./img/logo.png" alt="chetak cab logo image">
                         </div>
                         <h1 class="text-uppercase  herotext  text-primary mb-1 ml-1">Chetak cab</h1>
@@ -572,11 +506,11 @@
                     <h1 class="display-4 text-uppercase text-center mb-5">Our Route</h1>
                     <div class="row">
                         <div class="col-lg-4 col-md-6 mb-2">
-                            <div class="rent-item mb-4">
-                                <h4 class="text-uppercase text-primary mb-4">Rajkot To</h4>
+                            <div class="routes-city mb-4 ">
+                                <h4 class="city-text text-uppercase text-primary mb-4">Rajkot To</h4>
                                 <div class="mb-4">
                                     <div>
-                                        <i class="fa fa-road text-primary mr-1"></i>
+                                        <i class="fa fa-car fa-3x text-primary mr-1"></i>
                                         <ul class="text-left">
                                             <li>Rajkot - Morbi</li>
                                             <li>Rajkot - Surat</li>
@@ -600,11 +534,11 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 mb-2">
-                            <div class="rent-item mb-4">
-                                <h4 class="text-uppercase text-primary mb-4">Ahemdabad To</h4>
+                            <div class="routes-city mb-4">
+                                <h4 class="city-text text-uppercase text-primary mb-4">Ahemdabad To</h4>
                                 <div class="mb-4">
                                     <div>
-                                        <i class="fa fa-road text-primary mr-1"></i>
+                                        <i class="fa fa-car fa-3x text-primary mr-1"></i>
                                         <ul class="text-left">
                                             <li>Ahemdabad - Rajkot</li>
                                             <li>Ahemdabad - Surat</li>
@@ -628,11 +562,11 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 mb-2">
-                            <div class="rent-item mb-4">
-                                <h4 class="text-uppercase text-primary mb-4">Surat To</h4>
+                            <div class="routes-city mb-4">
+                                <h4 class="city-text text-uppercase text-primary mb-4">Surat To</h4>
                                 <div class=" mb-4">
                                     <div>
-                                        <i class="fa fa-road text-primary mr-1"></i>
+                                        <i class="fa fa-car fa-3x text-primary mr-1"></i>
                                         <ul class="text-left">
                                             <li>Surat - Ahemdabad</li>
                                             <li>Surat - Rajkot</li>
@@ -656,11 +590,11 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 mb-2">
-                            <div class="rent-item mb-4">
-                                <h4 class="text-uppercase text-primary mb-4">Mumbai To</h4>
+                            <div class="routes-city mb-4">
+                                <h4 class="city-text text-uppercase text-primary mb-4">Mumbai To</h4>
                                 <div class="mb-4">
                                     <div>
-                                        <i class="fa fa-road text-primary mr-1"></i>
+                                        <i class="fa fa-car fa-3x text-primary mr-1"></i>
                                         <ul class="text-left">
                                             <li>Mumbai - Ahemdabad</li>
                                             <li>Mumbai - Rajkot</li>
@@ -684,11 +618,11 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 mb-2">
-                            <div class="rent-item mb-4">
-                                <h4 class="text-uppercase text-primary mb-4">Porbandar To</h4>
+                            <div class="routes-city mb-4">
+                                <h4 class="city-text text-uppercase text-primary mb-4">Porbandar To</h4>
                                 <div class="mb-4">
                                     <div>
-                                        <i class="fa fa-road text-primary mr-1"></i>
+                                        <i class="fa fa-car fa-3x text-primary mr-1"></i>
                                         <ul class="text-left">
                                             <li>Porbandar - Mumbai</li>
                                             <li>Porbandar - Ahemdabad</li>

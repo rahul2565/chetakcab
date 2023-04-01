@@ -1,0 +1,75 @@
+.logoimg img {
+    height: 7vh;
+    width: 7vh;
+    padding-bottom: 2px;
+    background-color: aliceblue;
+    border-radius: 5px;
+
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar {
+        position: sticky;
+        display: block;
+        flex-wrap: wrap;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-bottom: 2rem !important;
+    }
+
+    .navbar-toggler {
+        position: relative;
+        top: -28px;
+        left: 18px;
+        z-index: 1;
+        height: 70px;
+        width: 70px;
+    }
+
+    .logoimg img {
+        padding-bottom: 2px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        left: 66px;
+        right: 0;
+        text-align: center;
+        height: 10vh;
+        width: 10vh;
+        background-color: aliceblue;
+        border-radius: 15%;
+    }
+
+    .herotext {
+        padding-top: 2rem;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 47px;
+        left: -52px;
+        right: 0;
+        text-align: center;
+    }
+
+}
+.city-text{
+    font-size: 3rem;
+}
+.routes-city {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    background: var(--light);
+    transition: .5s;
+}
