@@ -32,16 +32,17 @@
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="../css/style.css" rel="stylesheet">
-    <script src="../utils/jquery/jquery-3.6.4.min.js"></script>
-    <script src="../utils/jquery/jquery.validate.min.js"></script>
-    <script src="../utils/jquery/additional-methods.min.js"></script>
-    <script src="../js/jquery-editable-select.min.js"></script>
-    <link href="../css/jquery-editable-select.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="/utils/jquery/jquery-3.6.4.min.js"></script>
+    <script src="/utils/jquery/jquery.validate.min.js"></script>
+    <script src="/utils/jquery/additional-methods.min.js"></script>
+    <script src="/js/jquery-editable-select.min.js"></script>
+    <link href="/css/jquery-editable-select.min.css" rel="stylesheet">
     <link href="/css/jquery-clockpicker.min.css" rel="stylesheet">
+    <link href="/css/nav-bar.css" rel="stylesheet">
 
 
 </head>
@@ -81,41 +82,42 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
-        <div class="position-relative px-lg-5" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="index.html" class="navbar-brand">
-                    <div class="d-flex align-items-center">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0  bg-light rounded"
-                            style="width:  7vh; height: 7vh;">
-                            <img src="../img/logo.png" alt="chetak cab logo image" style="width:  7vh; height: 7vh;">
-                        </div>
-                        <h1 class="text-uppercase text-primary mb-1 ml-1">Chetak cab</h1>
-                    </div>
-                </a>
+        <div class=" position-relative  px-lg-5" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-5 py-lg-0 pl-3 pl-lg-5">
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <a href="" class="navbar-brand">
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex logoimg align-items-center justify-content-center flex-shrink-0  rounded">
+                            <img src="./img/logo.png" alt="chetak cab logo image">
+                        </div>
+                        <h1 class="text-uppercase  herotext  text-primary mb-1 ml-1">Chetak cab</h1>
+                    </div>
+                </a>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="/" class="nav-item nav-link ">Home</a>
-                        <a href="/about/" class="nav-item nav-link active">About</a>
-                        <a href="/service/" class="nav-item nav-link">Service</a>
-                        <a href="/routes/" class="nav-item nav-link">routes</a>
+                        <a href="/" class="nav-item nav-link active">Home</a>
+                        <a href="/about" class="nav-item nav-link ">About</a>
+                        <a href="/service" class="nav-item nav-link">Service</a>
+                        <a href="/routes" class="nav-item nav-link">routes</a>
+                        <div class="nav-item dropdown">
+                        </div>
                     </div>
-                    <a href="/contact/" class="nav-item nav-link">CONTACT</a>
+                    <a href="/contact" class="nav-item nav-link">CONTACT</a>
                 </div>
+            </nav>
         </div>
-        </nav>
-    </div>
     </div>
     <!-- Navbar End -->
 
     <!-- Search Start -->
-     <form id="bookingform" method="get">
+    <form id="bookingform" method="get">
         <div class="container-fluid bg-white pt-3 px-lg-5">
             <div class="row mx-n2">
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                    <select class="custom-select px-4 mb-3 rounded" id="pickup" name="pickup" style="height: 50px;" required>
+                    <select class="custom-select px-4 mb-3 rounded" id="pickup" name="pickup" style="height: 50px;"
+                        required>
                         <!-- gujarat -->
                         <option value="Ahmedabad">Ahmedabad</option>
                         <option value="Surat">Surat</option>
@@ -338,8 +340,8 @@
 
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
                     <div class="date mb-3" id="date" data-target-input="nearest">
-                        <input class="form-control rounded p-4 datetimepicker-input" name="date" id="pickupdate" required
-                            placeholder="Pickup Date" data-target="#date" data-toggle="datetimepicker"
+                        <input class="form-control rounded p-4 datetimepicker-input" name="date" id="pickupdate"
+                            required placeholder="Pickup Date" data-target="#date" data-toggle="datetimepicker"
                             inputmode='none' />
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-time"></span>
@@ -348,8 +350,8 @@
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2 ">
                     <div class="time mb-3 clockpicker" id="time" data-target-input="nearest">
-                        <input class="rounded  form-control p-4 " name="time" id="pickuptime" autocomplete="off" required
-                            placeholder="Pickup Time" data-target="#time" inputmode='none' />
+                        <input class="rounded  form-control p-4 " name="time" id="pickuptime" autocomplete="off"
+                            required placeholder="Pickup Time" data-target="#time" inputmode='none' />
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
