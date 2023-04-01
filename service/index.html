@@ -18,6 +18,7 @@
     <link rel="mask-icon" href="../fav/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <base href="https://chetakcab.in/">
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap"
@@ -41,11 +42,12 @@
     <script src="../js/jquery-editable-select.min.js"></script>
     <link href="../css/jquery-editable-select.min.css" rel="stylesheet">
     <link href="../css/jquery-clockpicker.min.css" rel="stylesheet">
+    <link href="../css/nav-bar.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
+     <!-- Topbar Start -->
+     <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
         <div class="row">
             <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center">
@@ -78,32 +80,32 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
-        <div class="position-relative px-lg-5" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="index.html" class="navbar-brand">
-                    <div class="d-flex align-items-center">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0  bg-light rounded"
-                            style="width:  7vh; height: 7vh;">
-                            <img src="../img/logo.png" alt="chetak cab logo image" style="width:  7vh; height: 7vh;">
-                        </div>
-                        <h1 class="text-uppercase text-primary mb-1 ml-1">Chetak cab</h1>
-                    </div>
-                </a>
+        <div class=" position-relative  px-lg-5" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-5 py-lg-0 pl-3 pl-lg-5">
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <a href="" class="navbar-brand">
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex logoimg align-items-center justify-content-center flex-shrink-0  rounded">
+                            <img src="./img/logo.png" alt="chetak cab logo image">
+                        </div>
+                        <h1 class="text-uppercase  herotext  text-primary mb-1 ml-1">Chetak cab</h1>
+                    </div>
+                </a>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="/" class="nav-item nav-link ">Home</a>
-                        <a href="/about/" class="nav-item nav-link ">About</a>
-                        <a href="/service/" class="nav-item nav-link active">Service</a>
-                        <a href="/routes/" class="nav-item nav-link">routes</a>
+                        <a href="/" class="nav-item nav-link active">Home</a>
+                        <a href="/about" class="nav-item nav-link ">About</a>
+                        <a href="/service" class="nav-item nav-link">Service</a>
+                        <a href="/routes" class="nav-item nav-link">routes</a>
+                        <div class="nav-item dropdown">
+                        </div>
                     </div>
-                    <a href="/contact/" class="nav-item nav-link">CONTACT</a>
+                    <a href="/contact" class="nav-item nav-link">CONTACT</a>
                 </div>
+            </nav>
         </div>
-        </nav>
-    </div>
     </div>
     <!-- Navbar End -->
 
@@ -587,7 +589,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <!-- Template Javascript -->
-    <script src="../js/main.js"></script>
+    <script src="/js/main.js"></script>
     <script>
 
         $('#pickup').editableSelect();
