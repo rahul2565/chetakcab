@@ -61,6 +61,72 @@
 </head>
 
 <body>
+    <style>
+        .logoimg img {
+            height: 7vh;
+            width: 7vh;
+            padding-bottom: 2px;
+        }
+
+        .navbar {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+        }
+
+        @media only screen and (max-width: 991px) {
+            body {
+                background-color: lightblue;
+            }
+
+            .navbar {
+                position: sticky;
+                display: block;
+                flex-wrap: wrap;
+                padding-left: 0%;
+                padding-right: 0%;
+                padding-bottom: 2rem !important;
+            }
+
+            .navbar-toggler {
+                position: relative;
+                top: -28px;
+                left: 18px;
+                z-index: 1;
+                height: 70px;
+                width: 70px;
+            }
+
+            .logoimg img {
+                padding-bottom: 2px;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                left: 66px;
+                right: 0;
+                text-align: center;
+                height: 10vh;
+                width: 10vh;
+                background-color: aliceblue;
+                border-radius: 15%;
+            }
+
+            .herotext {
+                padding-top: 2rem;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                top: 47px;
+                left: -52px;
+                right: 0;
+                text-align: center;
+            }
+
+        }
+    </style>
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
         <div class="row">
@@ -95,20 +161,20 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
-        <div class="position-relative px-lg-5" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="/" class="navbar-brand">
-                    <div class="d-flex align-items-center">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0  bg-light rounded"
-                            style="width:  7vh; height: 7vh;">
-                            <img src="./img/logo.png" alt="chetak cab logo image" style="width:  7vh; height: 7vh;">
-                        </div>
-                        <h1 class="text-uppercase text-primary mb-1 ml-1">Chetak cab</h1>
-                    </div>
-                </a>
+        <div class=" position-relative  px-lg-5" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-5 py-lg-0 pl-3 pl-lg-5">
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <a href="" class="navbar-brand">
+                    <div class="d-flex align-items-center">
+                        <div
+                            class="d-flex logoimg align-items-center justify-content-center flex-shrink-0  rounded">
+                            <img src="./img/logo.png" alt="chetak cab logo image">
+                        </div>
+                        <h1 class="text-uppercase  herotext  text-primary mb-1 ml-1">Chetak cab</h1>
+                    </div>
+                </a>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <a href="/" class="nav-item nav-link active">Home</a>
@@ -120,8 +186,8 @@
                     </div>
                     <a href="/contact" class="nav-item nav-link">CONTACT</a>
                 </div>
+            </nav>
         </div>
-        </nav>
     </div>
     <!-- Navbar End -->
 
@@ -130,7 +196,8 @@
         <div class="container-fluid bg-white pt-3 px-lg-5">
             <div class="row mx-n2">
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                    <select class="custom-select px-4 mb-3 rounded" id="pickup" name="pickup" style="height: 50px;" required>
+                    <select class="custom-select px-4 mb-3 rounded" id="pickup" name="pickup" style="height: 50px;"
+                        required>
                         <!-- gujarat -->
                         <option value="Ahmedabad">Ahmedabad</option>
                         <option value="Surat">Surat</option>
@@ -353,8 +420,8 @@
 
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
                     <div class="date mb-3" id="date" data-target-input="nearest">
-                        <input class="form-control rounded p-4 datetimepicker-input" name="date" id="pickupdate" required
-                            placeholder="Pickup Date" data-target="#date" data-toggle="datetimepicker"
+                        <input class="form-control rounded p-4 datetimepicker-input" name="date" id="pickupdate"
+                            required placeholder="Pickup Date" data-target="#date" data-toggle="datetimepicker"
                             inputmode='none' />
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-time"></span>
@@ -363,8 +430,8 @@
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2 ">
                     <div class="time mb-3 clockpicker" id="time" data-target-input="nearest">
-                        <input class="rounded  form-control p-4 " name="time" id="pickuptime" autocomplete="off" required
-                            placeholder="Pickup Time" data-target="#time" inputmode='none' />
+                        <input class="rounded  form-control p-4 " name="time" id="pickuptime" autocomplete="off"
+                            required placeholder="Pickup Time" data-target="#time" inputmode='none' />
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 px-2">
@@ -432,7 +499,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
             <!--  -->
             <div class="container-fluid py-5">
